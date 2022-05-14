@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "change_page",
+    "pageId": "合力",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tpre_page: () => {\n\t\treturn utils.refresh_table_func(-1);\n\t},\n\tnext_page: () => {\n\t\treturn utils.refresh_table_func(1);\n\t},\n\tfirst_page: () => {\n\t\treturn utils.refresh_table_func();\n\t},\n\tcur_page: () => {\n\t\treturn utils.refresh_table_func(0);\n\t}\n}",
+    "variables": []
+  },
+  "id": "合力_change_page",
+  "deleted": false,
+  "gitSyncId": "627081b4983fa859f48e8e8d_627e7421fdaba02c8615585c"
+}
