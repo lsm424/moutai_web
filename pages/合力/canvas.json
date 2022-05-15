@@ -328,8 +328,8 @@
                       "widgetName": "cur_page_text",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 59,
-                      "bottomRow": 63,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -361,8 +361,8 @@
                       "widgetName": "total_page_text",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 59,
-                      "bottomRow": 63,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -394,8 +394,8 @@
                       "widgetName": "Text4",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 59,
-                      "bottomRow": 63,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -420,7 +420,7 @@
                       "fontSize": "PARAGRAPH"
                     },
                     {
-                      "widgetName": "ButtonGroup1",
+                      "widgetName": "change_page_index_btn_group",
                       "isCanvas": false,
                       "dynamicPropertyPathList": [
                         {
@@ -432,8 +432,8 @@
                       ],
                       "displayName": "Button Group",
                       "iconSVG": "/static/media/icon.d6773218.svg",
-                      "topRow": 59,
-                      "bottomRow": 63,
+                      "topRow": 60,
+                      "bottomRow": 64,
                       "parentRowSpace": 10,
                       "groupButtons": {
                         "groupButton2": {
@@ -513,11 +513,11 @@
                           "key": "groupButtons.groupButton2.onClick"
                         }
                       ],
-                      "leftColumn": 41,
+                      "leftColumn": 43,
                       "dynamicBindingPathList": [],
                       "key": "w2bc7luufo",
                       "orientation": "horizontal",
-                      "rightColumn": 54,
+                      "rightColumn": 56,
                       "widgetId": "1hljmlyfbn",
                       "isVisible": true,
                       "version": 1,
@@ -551,12 +551,15 @@
                       "dynamicPropertyPathList": [
                         {
                           "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.onClick"
                         }
                       ],
                       "displayName": "Table",
                       "iconSVG": "/static/media/icon.db8a9cbd.svg",
                       "topRow": 9,
-                      "bottomRow": 58,
+                      "bottomRow": 60,
                       "isSortable": true,
                       "parentRowSpace": 10,
                       "onPageChange": "",
@@ -852,7 +855,7 @@
                           "menuColor": "#03B365",
                           "labelColor": "#FFFFFF",
                           "iconName": "list-detail-view",
-                          "onClick": "{{showModal('perservation_history_model')}}"
+                          "onClick": "{{(()=>{\nshowModal('perservation_history_model');\nget_perservatio.run();\n})()}}"
                         },
                         "accdate": {
                           "index": 0,
@@ -1002,7 +1005,7 @@
                       "buttonVariant": "PRIMARY"
                     },
                     {
-                      "widgetName": "Button4",
+                      "widgetName": "refresh_status_btn",
                       "onClick": "{{update_perservation.run(() => get_acount_api.run(), () => {})}}",
                       "buttonColor": "#03B365",
                       "displayName": "Button",
@@ -1959,8 +1962,12 @@
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
                       "leftColumn": 1,
-                      "dynamicBindingPathList": [],
-                      "text": "预约记录",
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "text": "{{heli_table.selectedRow.phone}}的预约记录",
                       "key": "yxs687xdxn",
                       "rightColumn": 41,
                       "textAlign": "LEFT",
@@ -2343,10 +2350,8 @@
           "Button1",
           "Button2",
           "Button3",
-          "Button4",
           "Button5",
           "Button6",
-          "ButtonGroup1",
           "Canvas1",
           "Canvas3",
           "Canvas4",
@@ -2364,6 +2369,7 @@
           "Text2",
           "Text4",
           "add_account_form",
+          "change_page_index_btn_group",
           "confirm_delete",
           "cur_page_text",
           "delete_account_model",
@@ -2380,6 +2386,7 @@
           "perservation_record_title",
           "phone_input",
           "phone_search",
+          "refresh_status_btn",
           "select_btn",
           "shop_select1",
           "shop_select_model",
