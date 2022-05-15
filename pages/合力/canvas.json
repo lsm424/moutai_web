@@ -531,21 +531,21 @@
                       "widgetName": "heli_table",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "phone",
                         "name",
+                        "phone",
                         "source",
                         "status",
                         "desc",
                         "shop_name",
                         "accdate",
                         "categorycode",
+                        "update_status_time",
+                        "customColumn2",
+                        "customColumn3",
                         "passwd",
                         "shop_code",
                         "token",
-                        "update_status_time",
-                        "update_token_time",
-                        "customColumn2",
-                        "customColumn3"
+                        "update_token_time"
                       ],
                       "isVisibleDownload": true,
                       "dynamicPropertyPathList": [
@@ -955,14 +955,15 @@
                       "columnSizeMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75,
-                        "source": 116,
-                        "name": 102,
+                        "status": 88,
+                        "source": 94,
+                        "name": 77,
                         "desc": 564,
                         "update_status_time": 183,
                         "customColumn1": 82,
                         "customColumn2": 60,
-                        "customColumn3": 101
+                        "customColumn3": 101,
+                        "phone": 116
                       }
                     },
                     {
@@ -2063,9 +2064,6 @@
                           "key": "primaryColumns.status.computedValue"
                         },
                         {
-                          "key": "tableData"
-                        },
-                        {
                           "key": "primaryColumns.desc.computedValue"
                         },
                         {
@@ -2088,6 +2086,9 @@
                         },
                         {
                           "key": "primaryColumns.shop_name.computedValue"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "leftColumn": 1,
