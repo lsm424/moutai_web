@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "update_perservation",
+    "name": "add_account",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -20,12 +20,18 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/perservation/update_perservation",
-      "headers": [],
+      "path": "/account/add_account",
+      "headers": [
+        {
+          "key": "content-type",
+          "value": "application/json"
+        }
+      ],
       "encodeParamsToggle": true,
       "queryParameters": [],
+      "body": "{\n\t\"phone\": {{phone_input.text}},\n\t\"passwd\": {{passwd_input.text}},\n\t\"source\": {{source_input.text}}\n}",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -44,13 +50,17 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "passwd_input.text",
+      "phone_input.text",
+      "source_input.text"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "合力_update_perservation",
+  "id": "合力_add_account",
   "deleted": false,
-  "gitSyncId": "627fbc492c1e3f03d329c345_627fc54f2c1e3f03d329c4ed"
+  "gitSyncId": "627fbc492c1e3f03d329c345_627fc48e2c1e3f03d329c4d0"
 }

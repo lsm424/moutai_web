@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "add_acount_api",
+    "name": "Query1",
     "datasource": {
       "name": "Untitled Datasource 2",
       "pluginId": "restapi-plugin",
@@ -17,17 +17,9 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/account/add_account",
-      "headers": [
-        {
-          "key": "content-type",
-          "value": "application/json"
-        }
-      ],
+      "headers": [],
       "encodeParamsToggle": true,
-      "queryParameters": [],
-      "body": "{\n\t\"phone\": {{phone_input.text}},\n\t\"passwd\": {{passwd_input.text}},\n\t\"source\": {{source_input.text}}\n}",
-      "httpMethod": "POST",
+      "body": "",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -35,25 +27,17 @@
       ]
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "passwd_input.text",
-      "phone_input.text",
-      "source_input.text"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "合力_add_acount_api",
+  "id": "合力_Query1",
   "deleted": false,
-  "gitSyncId": "627081b4983fa859f48e8e8d_62715373983fa859f48e8e98"
+  "gitSyncId": "627fbc492c1e3f03d329c345_627fc1162c1e3f03d329c440"
 }

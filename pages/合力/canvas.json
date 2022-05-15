@@ -1192,7 +1192,7 @@
                             {
                               "resetFormOnClick": true,
                               "widgetName": "FormButton1",
-                              "onClick": "{{add_acount_api.run(()=>{\n\tvar ret = add_acount_api.data;\n\tif (ret.code != 0) {\n\t\tshowAlert(ret.message);\n\t} else {\n\t\tshowAlert('添加成功')\n\t\tnavigateTo('合力')\n\t}\n})}}",
+                              "onClick": "{{add_acount_api_bak.run(()=>{\n\tvar ret = add_acount_api_bak.data;\n\tif (ret.code != 0) {\n\t\tshowAlert(ret.message);\n\t} else {\n\t\tshowAlert('添加成功')\n\t\tnavigateTo('合力')\n\t}\n})}}",
                               "buttonColor": "#03B365",
                               "dynamicPropertyPathList": [
                                 {
