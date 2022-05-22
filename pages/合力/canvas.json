@@ -19,13 +19,14 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 58,
           "minHeight": 770,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "heli_tab",
               "isCanvas": true,
               "dynamicPropertyPathList": [
@@ -49,10 +50,15 @@
                 }
               ],
               "leftColumn": 1,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
+                  "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -69,6 +75,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "start_time",
                       "minDate": "1920-12-31T18:30:00.000Z",
                       "dateFormat": "YYYY-MM-DD HH:mm",
@@ -83,12 +90,19 @@
                       "animateLoading": true,
                       "parentColumnSpace": 17.4677734375,
                       "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
                       "isDisabled": false,
                       "key": "083m4re6qj",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "defaultDate": "2022-05-04T00:58:44.257Z",
                       "rightColumn": 10,
                       "widgetId": "d9dpkox6e8",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
                       "label": "",
@@ -96,10 +110,12 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "closeOnSelection": false,
                       "maxDate": "2121-12-31T18:29:00.000Z"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "end_time",
                       "minDate": "1920-12-31T18:30:00.000Z",
                       "dateFormat": "YYYY-MM-DD HH:mm",
@@ -123,14 +139,19 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "defaultDate"
+                        },
+                        {
+                          "key": "accentColor"
                         }
                       ],
                       "isDisabled": false,
                       "key": "083m4re6qj",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "defaultDate": "{{utils.next_data(1)}}",
                       "rightColumn": 19,
                       "widgetId": "3v5yo6hwpl",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
                       "label": "",
@@ -138,10 +159,12 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "closeOnSelection": false,
                       "maxDate": "2121-12-31T18:29:00.000Z"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "phone_search",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
@@ -156,15 +179,21 @@
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 19,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "placeholderText": "手机号...",
                       "isDisabled": false,
                       "key": "1bu06d71dm",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "rightColumn": 27,
                       "widgetId": "shhv5yo6ez",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "label": "",
                       "allowCurrencyChange": false,
@@ -172,10 +201,12 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "iconAlign": "left",
                       "defaultText": ""
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "name_search",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
@@ -190,15 +221,21 @@
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 27,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "placeholderText": "名字...",
                       "isDisabled": false,
                       "key": "dtc1ckwa4m",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "rightColumn": 34,
                       "widgetId": "im6upbq9d1",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "label": "",
                       "allowCurrencyChange": false,
@@ -206,10 +243,12 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "iconAlign": "left",
                       "defaultText": ""
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "source_search",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595.svg",
@@ -224,15 +263,21 @@
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 34,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "placeholderText": "来源...",
                       "isDisabled": false,
                       "key": "dtc1ckwa4m",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "rightColumn": 41,
                       "widgetId": "3o017rs9je",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "label": "",
                       "allowCurrencyChange": false,
@@ -240,10 +285,12 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "iconAlign": "left",
                       "defaultText": ""
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "status_search",
                       "isFilterable": false,
                       "dynamicPropertyPathList": [
@@ -270,22 +317,30 @@
                         }
                       ],
                       "leftColumn": 41,
-                      "dynamicBindingPathList": [],
-                      "options": "[\n  {\n    \"label\": \"全部\",\n    \"value\": 0\n  },\n  {\n    \"label\": \"可预约\",\n    \"value\": 1\n  },\n  {\n    \"label\": \"不可预约\",\n    \"value\": 2\n  },\n  {\n    \"label\": \"预约中\",\n    \"value\": 3\n  },\n  {\n    \"label\": \"已预约\",\n    \"value\": 4\n  },\n  {\n    \"label\": \"预约失败\",\n    \"value\": 5\n  },\n  {\n    \"label\": \"已中奖\",\n    \"value\": 6\n  },\n  {\n    \"label\": \"未预约\",\n    \"value\": 7\n  }\n]",
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "options": "[\n  {\n    \"label\": \"全部\",\n    \"value\": 0\n  },\n  {\n    \"label\": \"可预约\",\n    \"value\": 1\n  },\n  {\n    \"label\": \"不可预约\",\n    \"value\": 2\n  },\n  {\n    \"label\": \"预约中\",\n    \"value\": 3\n  },\n  {\n    \"label\": \"下发手机处理中\",\n    \"value\": 4\n  },\n  {\n    \"label\": \"已预约\",\n    \"value\": 5\n  },\n  {\n    \"label\": \"预约失败\",\n    \"value\": 6\n  },\n  {\n    \"label\": \"已中奖\",\n    \"value\": 7\n  },\n  {\n    \"label\": \"未中奖\",\n    \"value\": 8\n  }\n]",
                       "placeholderText": "状态",
                       "isDisabled": false,
                       "key": "q10kod4c5h",
+                      "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "rightColumn": 48,
                       "widgetId": "lyk5fcbctz",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "version": 1,
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "onOptionChange": ""
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "select_btn",
                       "onClick": "{{(()=>{\n\tconst r = change_page.first_page();\n\tget_acount_api.run(()=>{}, ()=>{}, {page: r[0]});\n})()}}",
                       "buttonColor": "#03B365",
@@ -313,6 +368,7 @@
                       "text": "查询",
                       "isDisabled": false,
                       "key": "qhg1oc8wrr",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 53,
                       "isDefaultClickDisabled": true,
                       "widgetId": "ad19usdbug",
@@ -322,9 +378,11 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "cur_page_text",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -337,6 +395,7 @@
                       "parentColumnSpace": 17.4677734375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 56,
                       "dynamicBindingPathList": [
                         {
@@ -345,6 +404,7 @@
                       ],
                       "text": "{{appsmith.store.cur_page_text}}",
                       "key": "s14d2o49ec",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 58,
                       "textAlign": "RIGHT",
                       "widgetId": "ys82z3sfet",
@@ -355,9 +415,11 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "total_page_text",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -370,6 +432,7 @@
                       "parentColumnSpace": 17.4677734375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 60,
                       "dynamicBindingPathList": [
                         {
@@ -378,6 +441,7 @@
                       ],
                       "text": "{{appsmith.store.total_page_text}}",
                       "key": "s14d2o49ec",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 62,
                       "textAlign": "LEFT",
                       "widgetId": "hgbf3a3cdl",
@@ -388,9 +452,11 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Text4",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -403,10 +469,12 @@
                       "parentColumnSpace": 17.4677734375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 58,
                       "dynamicBindingPathList": [],
                       "text": "/",
                       "key": "s14d2o49ec",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 60,
                       "textAlign": "CENTER",
                       "widgetId": "onlyl89u28",
@@ -417,9 +485,11 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "PARAGRAPH"
+                      "borderRadius": "0px",
+                      "fontSize": "0.875rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "change_page_index_btn_group",
                       "isCanvas": false,
                       "dynamicPropertyPathList": [
@@ -514,71 +584,40 @@
                         }
                       ],
                       "leftColumn": 43,
-                      "dynamicBindingPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
                       "key": "w2bc7luufo",
+                      "labelTextSize": "0.875rem",
                       "orientation": "horizontal",
                       "rightColumn": 56,
                       "widgetId": "1hljmlyfbn",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "version": 1,
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+                        }
+                      },
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY"
                     },
                     {
                       "multiRowSelection": true,
-                      "widgetName": "heli_table",
-                      "defaultPageSize": 0,
-                      "columnOrder": [
-                        "name",
-                        "phone",
-                        "source",
-                        "status",
-                        "desc",
-                        "shop_name",
-                        "accdate",
-                        "categorycode",
-                        "update_status_time",
-                        "customColumn2",
-                        "customColumn3",
-                        "passwd",
-                        "shop_code",
-                        "token",
-                        "update_token_time"
-                      ],
+                      "boxShadow": "none",
                       "isVisibleDownload": true,
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "tableData"
-                        },
-                        {
-                          "key": "primaryColumns.customColumn3.onClick"
-                        }
-                      ],
-                      "displayName": "Table",
                       "iconSVG": "/static/media/icon.db8a9cbd.svg",
                       "topRow": 9,
-                      "bottomRow": 60,
                       "isSortable": true,
-                      "parentRowSpace": 10,
                       "onPageChange": "",
                       "type": "TABLE_WIDGET",
-                      "defaultSelectedRow": "0",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 17.4677734375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onPageChange"
-                        },
-                        {
-                          "key": "primaryColumns.customColumn2.onClick"
-                        },
-                        {
-                          "key": "primaryColumns.customColumn3.onClick"
-                        }
-                      ],
                       "dynamicBindingPathList": [
                         {
                           "key": "primaryColumns.status.computedValue"
@@ -621,9 +660,97 @@
                         },
                         {
                           "key": "primaryColumns.categorycode.computedValue"
+                        },
+                        {
+                          "key": "accentColor"
                         }
                       ],
                       "leftColumn": 1,
+                      "delimiter": ",",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": true,
+                      "isVisible": true,
+                      "enableClientSideSearch": true,
+                      "version": 3,
+                      "totalRecordsCount": 0,
+                      "isLoading": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "borderRadius": "0px",
+                      "columnSizeMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 88,
+                        "source": 94,
+                        "name": 77,
+                        "desc": 564,
+                        "update_status_time": 183,
+                        "customColumn1": 82,
+                        "customColumn2": 60,
+                        "customColumn3": 101,
+                        "phone": 116,
+                        "accdate": 90,
+                        "categorycode": 89
+                      },
+                      "widgetName": "heli_table",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "name",
+                        "phone",
+                        "source",
+                        "status",
+                        "desc",
+                        "shop_name",
+                        "accdate",
+                        "categorycode",
+                        "update_status_time",
+                        "customColumn2",
+                        "customColumn3",
+                        "passwd",
+                        "shop_code",
+                        "token",
+                        "update_token_time"
+                      ],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.onClick"
+                        }
+                      ],
+                      "displayName": "Table",
+                      "bottomRow": 60,
+                      "parentRowSpace": 10,
+                      "defaultSelectedRow": "0",
+                      "hideCard": false,
+                      "parentColumnSpace": 17.4677734375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onPageChange"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn2.onClick"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn3.onClick"
+                        }
+                      ],
                       "primaryColumns": {
                         "status": {
                           "index": 2,
@@ -632,7 +759,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -642,7 +769,9 @@
                           "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
                           "buttonColor": "#03B365",
                           "menuColor": "#03B365",
-                          "labelColor": "#FFFFFF"
+                          "labelColor": "#FFFFFF",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "desc": {
                           "index": 0,
@@ -651,7 +780,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -659,7 +788,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "描述",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.desc))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.desc))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "name": {
                           "index": 1,
@@ -668,7 +799,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -676,7 +807,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "名字",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "phone": {
                           "index": 2,
@@ -685,7 +818,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -693,7 +826,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "手机号",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "source": {
                           "index": 3,
@@ -702,7 +837,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -710,7 +845,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "来源",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.source))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.source))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "update_status_time": {
                           "index": 5,
@@ -719,7 +856,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -727,7 +864,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "更新时间",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.update_status_time))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.update_status_time))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "customColumn2": {
                           "index": 7,
@@ -748,8 +887,9 @@
                           "menuColor": "#03B365",
                           "labelColor": "#FFFFFF",
                           "iconName": "delete",
-                          "borderRadius": "CIRCLE",
-                          "onClick": "{{showModal('delete_account_model')}}"
+                          "borderRadius": "9999px",
+                          "onClick": "{{showModal('delete_account_model')}}",
+                          "boxShadow": "none"
                         },
                         "shop_code": {
                           "index": 3,
@@ -758,7 +898,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": false,
@@ -766,7 +906,9 @@
                           "isCellVisible": false,
                           "isDerived": false,
                           "label": "shop_code",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.shop_code))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.shop_code))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "shop_name": {
                           "index": 4,
@@ -775,7 +917,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -783,7 +925,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "店铺",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.shop_name))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.shop_name))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "passwd": {
                           "index": 2,
@@ -792,7 +936,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": false,
@@ -800,7 +944,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "passwd",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.passwd))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.passwd))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "token": {
                           "index": 8,
@@ -809,7 +955,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": false,
@@ -817,7 +963,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "token",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.token))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.token))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "update_token_time": {
                           "index": 10,
@@ -826,7 +974,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": false,
@@ -834,7 +982,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "update_token_time",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.update_token_time))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.update_token_time))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "customColumn3": {
                           "index": 12,
@@ -855,7 +1005,9 @@
                           "menuColor": "#03B365",
                           "labelColor": "#FFFFFF",
                           "iconName": "list-detail-view",
-                          "onClick": "{{(()=>{\nshowModal('perservation_history_model');\nget_perservatio.run();\n})()}}"
+                          "onClick": "{{(()=>{\nshowModal('perservation_history_model');\nget_perservatio.run();\n})()}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "accdate": {
                           "index": 0,
@@ -864,7 +1016,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -872,7 +1024,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "消费次数",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.accdate))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.accdate))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "categorycode": {
                           "index": 1,
@@ -881,7 +1035,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -889,10 +1043,11 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "品类数",
-                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.categorycode))}}"
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.categorycode))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         }
                       },
-                      "delimiter": ",",
                       "key": "qpm2smggdg",
                       "derivedColumns": {
                         "customColumn2": {
@@ -914,7 +1069,8 @@
                           "menuColor": "#03B365",
                           "labelColor": "#FFFFFF",
                           "iconName": "delete",
-                          "borderRadius": "CIRCLE"
+                          "borderRadius": "9999px",
+                          "boxShadow": "none"
                         },
                         "customColumn3": {
                           "index": 12,
@@ -934,44 +1090,27 @@
                           "buttonColor": "#03B365",
                           "menuColor": "#03B365",
                           "labelColor": "#FFFFFF",
-                          "iconName": "list-detail-view"
+                          "iconName": "list-detail-view",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         }
                       },
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 62,
-                      "textSize": "PARAGRAPH",
+                      "textSize": "0.875rem",
                       "widgetId": "xg2dprjvp2",
-                      "isVisibleFilters": true,
                       "tableData": "{{get_acount_api.data.data}}",
-                      "isVisible": true,
                       "label": "Data",
                       "searchKey": "",
-                      "enableClientSideSearch": true,
-                      "version": 3,
-                      "totalRecordsCount": 0,
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
                       "isVisiblePagination": true,
-                      "verticalAlignment": "CENTER",
-                      "columnSizeMap": {
-                        "task": 245,
-                        "step": 62,
-                        "status": 88,
-                        "source": 94,
-                        "name": 77,
-                        "desc": 564,
-                        "update_status_time": 183,
-                        "customColumn1": 82,
-                        "customColumn2": 60,
-                        "customColumn3": 101,
-                        "phone": 116,
-                        "accdate": 90,
-                        "categorycode": 89
-                      }
+                      "verticalAlignment": "CENTER"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "perservation_batch",
                       "onClick": "{{showModal('shop_select_model')}}",
                       "buttonColor": "#03B365",
@@ -995,6 +1134,7 @@
                       "text": "预约",
                       "isDisabled": false,
                       "key": "kh6pr5jipi",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 58,
                       "isDefaultClickDisabled": true,
                       "widgetId": "s9ydmhu2mc",
@@ -1004,9 +1144,11 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "refresh_status_btn",
                       "onClick": "{{update_perservation.run(() => get_acount_api.run(), () => {})}}",
                       "buttonColor": "#03B365",
@@ -1029,6 +1171,7 @@
                       "text": "刷新状态",
                       "isDisabled": false,
                       "key": "w5j10usigr",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 63,
                       "isDefaultClickDisabled": true,
                       "widgetId": "xylu1ei2zk",
@@ -1038,11 +1181,13 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY"
                     }
                   ],
                   "isDisabled": false,
                   "key": "6wlga0q1in",
+                  "labelTextSize": "0.875rem",
                   "tabName": "查询",
                   "rightColumn": 433.5,
                   "detachFromLayout": true,
@@ -1051,10 +1196,12 @@
                   "version": 1,
                   "parentId": "9ifbwqpw7t",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab2",
+                  "boxShadow": "none",
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -1071,10 +1218,15 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "boxShadow": "VARIANT1",
+                      "boxShadow": "0px 0px 4px 3px rgba(0, 0, 0, 0.25)",
                       "widgetName": "add_account_form",
                       "borderColor": "#38AFF4",
                       "isCanvas": true,
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "boxShadow"
+                        }
+                      ],
                       "displayName": "Form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
                       "topRow": 11,
@@ -1089,29 +1241,27 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Canvas1",
-                          "rightColumn": 433.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "slvycmey5c",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "hfw2ye3r1f",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "passwdCopy",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 19,
@@ -1123,10 +1273,12 @@
                               "parentColumnSpace": 6.4609375,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 0,
                               "dynamicBindingPathList": [],
                               "text": "来源",
                               "key": "ft25sllk3e",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 16,
                               "textAlign": "RIGHT",
                               "widgetId": "73b0fimikx",
@@ -1137,10 +1289,17 @@
                               "parentId": "slvycmey5c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING2"
+                              "borderRadius": "0px",
+                              "fontSize": "1.125rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "passwd",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 13,
@@ -1152,10 +1311,12 @@
                               "parentColumnSpace": 6.4609375,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 0,
                               "dynamicBindingPathList": [],
                               "text": "密码",
                               "key": "ft25sllk3e",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 16,
                               "textAlign": "RIGHT",
                               "widgetId": "my7b9t90lq",
@@ -1166,10 +1327,17 @@
                               "parentId": "slvycmey5c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING2"
+                              "borderRadius": "0px",
+                              "fontSize": "1.125rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text1",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1179,10 +1347,12 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 0,
                               "dynamicBindingPathList": [],
                               "text": "新增账号",
                               "key": "ft25sllk3e",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 24,
                               "textAlign": "LEFT",
                               "widgetId": "5fmp0qr3v3",
@@ -1193,10 +1363,12 @@
                               "parentId": "slvycmey5c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "FormButton1",
                               "onClick": "{{add_acount_api_bak.run(()=>{\n\tvar ret = add_acount_api_bak.data;\n\tif (ret.code != 0) {\n\t\tshowAlert(ret.message);\n\t} else {\n\t\tshowAlert('添加成功')\n\t\tnavigateTo('合力')\n\t}\n})}}",
                               "buttonColor": "#03B365",
@@ -1221,6 +1393,7 @@
                               "dynamicBindingPathList": [],
                               "text": "提交",
                               "key": "qwce6fakss",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "isDefaultClickDisabled": true,
                               "widgetId": "07q4dceug8",
@@ -1231,10 +1404,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "FormButton2",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1249,6 +1424,7 @@
                               "dynamicBindingPathList": [],
                               "text": "清空",
                               "key": "qwce6fakss",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
                               "widgetId": "j1gad84ddg",
@@ -1259,10 +1435,17 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Text2",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 7,
@@ -1274,10 +1457,12 @@
                               "parentColumnSpace": 6.4609375,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 0,
                               "dynamicBindingPathList": [],
                               "text": "手机号",
                               "key": "ft25sllk3e",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 16,
                               "textAlign": "RIGHT",
                               "widgetId": "49ny8i8acp",
@@ -1288,9 +1473,11 @@
                               "parentId": "slvycmey5c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING2"
+                              "borderRadius": "0px",
+                              "fontSize": "1.125rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "phone_input",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1304,13 +1491,20 @@
                               "parentColumnSpace": 6.4609375,
                               "resetOnSubmit": true,
                               "leftColumn": 18,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "1bu06d71dm",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 61,
                               "widgetId": "xqmxit4oo6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "",
                               "allowCurrencyChange": false,
@@ -1318,10 +1512,12 @@
                               "parentId": "slvycmey5c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "passwd_input",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1335,13 +1531,20 @@
                               "parentColumnSpace": 5.0498046875,
                               "resetOnSubmit": true,
                               "leftColumn": 18,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "1bu06d71dm",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 61,
                               "widgetId": "l6dy7tj65d",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "",
                               "allowCurrencyChange": false,
@@ -1349,10 +1552,12 @@
                               "parentId": "slvycmey5c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "source_input",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1366,13 +1571,20 @@
                               "parentColumnSpace": 5.0498046875,
                               "resetOnSubmit": true,
                               "leftColumn": 18,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": false,
                               "key": "1bu06d71dm",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 61,
                               "widgetId": "yaqlkmfiei",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "",
                               "allowCurrencyChange": false,
@@ -1380,25 +1592,40 @@
                               "parentId": "slvycmey5c",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             }
                           ],
-                          "key": "055n19b3ye"
+                          "key": "055n19b3ye",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 433.5,
+                          "detachFromLayout": true,
+                          "widgetId": "slvycmey5c",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "hfw2ye3r1f",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "fhl4uovupt",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "#F6F7F8",
                       "rightColumn": 44,
                       "widgetId": "hfw2ye3r1f",
                       "isVisible": true,
                       "parentId": "2w9d81xibs",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "6wlga0q1in",
+                  "labelTextSize": "0.875rem",
                   "tabName": "新增",
                   "rightColumn": 433.5,
                   "detachFromLayout": true,
@@ -1407,12 +1634,15 @@
                   "version": 1,
                   "parentId": "9ifbwqpw7t",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "xdyz28dw40",
+              "labelTextSize": "0.875rem",
               "rightColumn": 64,
               "widgetId": "9ifbwqpw7t",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "Tab 1",
               "onTabSelected": "{{(()=>{\n\tconst r = change_page.cur_page();\n\tget_acount_api.run(()=>{}, ()=>{}, {page: r[0]});\n})()}}",
               "shouldShowTabs": true,
@@ -1436,9 +1666,11 @@
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             },
             {
+              "boxShadow": "none",
               "widgetName": "delete_account_model",
               "isCanvas": true,
               "dynamicPropertyPathList": [
@@ -1465,53 +1697,54 @@
               "dynamicBindingPathList": [],
               "children": [
                 {
+                  "boxShadow": "none",
                   "widgetName": "Canvas5",
-                  "rightColumn": 419.2265625,
-                  "detachFromLayout": true,
                   "displayName": "Canvas",
-                  "widgetId": "9zzx2ndoul",
                   "topRow": 0,
                   "bottomRow": 230,
                   "parentRowSpace": 1,
-                  "isVisible": true,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
-                  "version": 1,
                   "hideCard": true,
-                  "parentId": "3ujucm2ru9",
                   "shouldScrollContents": false,
                   "minHeight": 240,
-                  "renderMode": "CANVAS",
-                  "isLoading": false,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Icon1",
-                      "rightColumn": 64,
                       "onClick": "{{closeModal('delete_account_model')}}",
-                      "iconName": "cross",
                       "buttonColor": "#2E3D49",
                       "displayName": "Icon",
                       "iconSVG": "/static/media/icon.31d6cfe0.svg",
-                      "widgetId": "etlocxr0v3",
                       "topRow": 1,
                       "bottomRow": 5,
-                      "isVisible": true,
                       "type": "ICON_BUTTON_WIDGET",
-                      "version": 1,
                       "hideCard": true,
+                      "leftColumn": 56,
+                      "iconSize": 24,
+                      "key": "u6ptj1y254",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "etlocxr0v3",
+                      "isVisible": true,
+                      "version": 1,
                       "parentId": "9zzx2ndoul",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "leftColumn": 56,
-                      "borderRadius": "SHARP",
-                      "buttonVariant": "TERTIARY",
-                      "iconSize": 24,
-                      "key": "u6ptj1y254"
+                      "borderRadius": "0px",
+                      "buttonVariant": "TERTIARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "delete_sure_model",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 1,
@@ -1521,6 +1754,7 @@
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
@@ -1529,6 +1763,7 @@
                       ],
                       "text": "确定删除{{heli_table.selectedRow.phone}}吗",
                       "key": "vyh5ugtnxi",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 46,
                       "textAlign": "LEFT",
                       "widgetId": "g9tghe2ca9",
@@ -1539,9 +1774,11 @@
                       "parentId": "9zzx2ndoul",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button1",
                       "onClick": "{{closeModal('delete_account_model')}}",
                       "buttonColor": "#03B365",
@@ -1558,6 +1795,7 @@
                       "text": "关闭",
                       "isDisabled": false,
                       "key": "iochqe9g07",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 48,
                       "isDefaultClickDisabled": true,
                       "widgetId": "qr817dxxk1",
@@ -1568,9 +1806,11 @@
                       "parentId": "9zzx2ndoul",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "SECONDARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "confirm_delete",
                       "onClick": "{{delete_acount_api.run(()=>{\n\tconst r = delete_acount_api.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message);\n\t} else {\n\t\tshowAlert('删除成功');\n\t}\n closeModal('delete_account_model');\n})}}",
                       "buttonColor": "#03B365",
@@ -1596,6 +1836,7 @@
                       "text": "确定",
                       "isDisabled": false,
                       "key": "iochqe9g07",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 60,
                       "isDefaultClickDisabled": true,
                       "widgetId": "s6co4i8vvr",
@@ -1606,15 +1847,27 @@
                       "parentId": "9zzx2ndoul",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY"
                     }
                   ],
                   "isDisabled": false,
-                  "key": "xc90taf8c6"
+                  "key": "xc90taf8c6",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 419.2265625,
+                  "detachFromLayout": true,
+                  "widgetId": "9zzx2ndoul",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "3ujucm2ru9",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "30l45pe2kz",
               "height": 240,
+              "labelTextSize": "0.875rem",
               "rightColumn": 31,
               "detachFromLayout": true,
               "widgetId": "3ujucm2ru9",
@@ -1625,9 +1878,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "onClose": "{{(()=>{\n\tconst r = change_page.cur_page();\n\tget_acount_api.run(()=>{}, ()=>{}, {page: r[0]});\n})()}}",
+              "borderRadius": "0px",
               "width": 456
             },
             {
+              "boxShadow": "none",
               "widgetName": "shop_select_model",
               "isCanvas": true,
               "displayName": "Modal",
@@ -1649,6 +1904,7 @@
               "dynamicBindingPathList": [],
               "children": [
                 {
+                  "boxShadow": "none",
                   "widgetName": "Canvas6",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -1665,31 +1921,39 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Icon2",
-                      "rightColumn": 64,
                       "onClick": "{{closeModal('shop_select_model')}}",
-                      "iconName": "cross",
                       "buttonColor": "#2E3D49",
                       "displayName": "Icon",
                       "iconSVG": "/static/media/icon.31d6cfe0.svg",
-                      "widgetId": "yw6p4942ei",
                       "topRow": 1,
                       "bottomRow": 5,
-                      "isVisible": true,
                       "type": "ICON_BUTTON_WIDGET",
-                      "version": 1,
                       "hideCard": true,
+                      "leftColumn": 56,
+                      "iconSize": 24,
+                      "key": "l8frl1aqwb",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "yw6p4942ei",
+                      "isVisible": true,
+                      "version": 1,
                       "parentId": "hllm5p9ko3",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "leftColumn": 56,
-                      "borderRadius": "SHARP",
-                      "buttonVariant": "TERTIARY",
-                      "iconSize": 24,
-                      "key": "l8frl1aqwb"
+                      "borderRadius": "0px",
+                      "buttonVariant": "TERTIARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "shop_select_title",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 1,
@@ -1699,10 +1963,12 @@
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [],
                       "text": "店铺选择",
                       "key": "d7i84ggvl6",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 41,
                       "textAlign": "LEFT",
                       "widgetId": "4bbb00gep6",
@@ -1713,9 +1979,11 @@
                       "parentId": "hllm5p9ko3",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button2",
                       "onClick": "{{closeModal('shop_select_model')}}",
                       "buttonColor": "#03B365",
@@ -1732,6 +2000,7 @@
                       "text": "关闭",
                       "isDisabled": false,
                       "key": "kh6pr5jipi",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 48,
                       "isDefaultClickDisabled": true,
                       "widgetId": "l36w8noz34",
@@ -1742,9 +2011,11 @@
                       "parentId": "hllm5p9ko3",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "SECONDARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "shop_select_sure",
                       "onClick": "{{perservation_sync_api.run(()=>{\n\tconst r = perservation_sync_api.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message);\n\t} else {\n\t\tshowAlert('开启预约，稍等刷下结果');\n\t\tget_acount_api.run();\n\t}\ncloseModal('shop_select_model');\n})}}",
                       "buttonColor": "#03B365",
@@ -1770,6 +2041,7 @@
                       "text": "确定",
                       "isDisabled": false,
                       "key": "kh6pr5jipi",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 60,
                       "isDefaultClickDisabled": true,
                       "widgetId": "s18qqtu0ew",
@@ -1780,9 +2052,11 @@
                       "parentId": "hllm5p9ko3",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "shop_select1",
                       "isFilterable": false,
                       "dynamicPropertyPathList": [],
@@ -1807,22 +2081,29 @@
                         },
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "accentColor"
                         }
                       ],
                       "options": "{{get_shopes_api.data.data}}",
                       "placeholderText": "店铺...",
                       "isDisabled": false,
                       "key": "asxaxo72ki",
+                      "labelTextSize": "0.875rem",
                       "isRequired": true,
                       "rightColumn": 51,
                       "widgetId": "9nczbfh44f",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
                       "version": 1,
                       "parentId": "hllm5p9ko3",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button3",
                       "onClick": "{{get_shopes_api.run(()=>{\n\tconst ret = get_shopes_api.data;\n\tif (ret.code != 0) {\n\t\tshowAlert(ret.message);\n\t} else {\n\t\tshowAlert(ret.message)\n\t\treturn ret.data\n\t}\n})}}",
                       "buttonColor": "#FFFFFF",
@@ -1850,6 +2131,7 @@
                       "text": "",
                       "isDisabled": false,
                       "key": "iiv89x6q82",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 59,
                       "isDefaultClickDisabled": true,
                       "iconName": "refresh",
@@ -1860,13 +2142,14 @@
                       "parentId": "hllm5p9ko3",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "ROUNDED",
+                      "borderRadius": "0.375rem",
                       "buttonVariant": "PRIMARY",
                       "iconAlign": "left"
                     }
                   ],
                   "isDisabled": false,
                   "key": "31pnjiltvc",
+                  "labelTextSize": "0.875rem",
                   "rightColumn": 419.2265625,
                   "detachFromLayout": true,
                   "widgetId": "hllm5p9ko3",
@@ -1874,11 +2157,13 @@
                   "version": 1,
                   "parentId": "3j6urloqi7",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "d3vcne1vw9",
               "height": 240,
+              "labelTextSize": "0.875rem",
               "rightColumn": 41,
               "detachFromLayout": true,
               "widgetId": "3j6urloqi7",
@@ -1889,9 +2174,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "onClose": "",
+              "borderRadius": "0px",
               "width": 456
             },
             {
+              "boxShadow": "none",
               "widgetName": "perservation_history_model",
               "isCanvas": true,
               "displayName": "Modal",
@@ -1907,53 +2194,54 @@
               "leftColumn": 9,
               "children": [
                 {
+                  "boxShadow": "none",
                   "widgetName": "Canvas7",
-                  "rightColumn": 419.2265625,
-                  "detachFromLayout": true,
                   "displayName": "Canvas",
-                  "widgetId": "51lzyqsx9v",
                   "topRow": 0,
                   "bottomRow": 630,
                   "parentRowSpace": 1,
-                  "isVisible": true,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
-                  "version": 1,
                   "hideCard": true,
-                  "parentId": "13xwkubux8",
                   "shouldScrollContents": false,
                   "minHeight": 634,
-                  "renderMode": "CANVAS",
-                  "isLoading": false,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Icon3",
-                      "rightColumn": 64,
                       "onClick": "{{closeModal('perservation_history_model')}}",
-                      "iconName": "cross",
                       "buttonColor": "#2E3D49",
                       "displayName": "Icon",
                       "iconSVG": "/static/media/icon.31d6cfe0.svg",
-                      "widgetId": "n25400ofsn",
                       "topRow": 1,
                       "bottomRow": 5,
-                      "isVisible": true,
                       "type": "ICON_BUTTON_WIDGET",
-                      "version": 1,
                       "hideCard": true,
+                      "leftColumn": 56,
+                      "iconSize": 24,
+                      "key": "7re01lhvza",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "n25400ofsn",
+                      "isVisible": true,
+                      "version": 1,
                       "parentId": "51lzyqsx9v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "leftColumn": 56,
-                      "borderRadius": "SHARP",
-                      "buttonVariant": "TERTIARY",
-                      "iconSize": 24,
-                      "key": "7re01lhvza"
+                      "borderRadius": "0px",
+                      "buttonVariant": "TERTIARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "perservation_record_title",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
                       "topRow": 1,
@@ -1963,6 +2251,7 @@
                       "animateLoading": true,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
@@ -1971,6 +2260,7 @@
                       ],
                       "text": "{{heli_table.selectedRow.phone}}的预约记录",
                       "key": "yxs687xdxn",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 41,
                       "textAlign": "LEFT",
                       "widgetId": "8w4ally29a",
@@ -1981,9 +2271,11 @@
                       "parentId": "51lzyqsx9v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING1"
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button5",
                       "onClick": "{{closeModal('perservation_history_model')}}",
                       "buttonColor": "#03B365",
@@ -2000,6 +2292,7 @@
                       "text": "关闭",
                       "isDisabled": false,
                       "key": "c3xn931kbm",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 63,
                       "isDefaultClickDisabled": true,
                       "widgetId": "n4wn4hyq30",
@@ -2010,9 +2303,11 @@
                       "parentId": "51lzyqsx9v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "SECONDARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Button6",
                       "buttonColor": "#03B365",
                       "displayName": "Button",
@@ -2028,6 +2323,7 @@
                       "text": "Confirm",
                       "isDisabled": true,
                       "key": "c3xn931kbm",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 51,
                       "isDefaultClickDisabled": true,
                       "widgetId": "i2wecgm1bo",
@@ -2038,9 +2334,11 @@
                       "parentId": "51lzyqsx9v",
                       "renderMode": "CANVAS",
                       "isLoading": false,
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
@@ -2098,6 +2396,9 @@
                         },
                         {
                           "key": "tableData"
+                        },
+                        {
+                          "key": "accentColor"
                         }
                       ],
                       "leftColumn": 1,
@@ -2109,7 +2410,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -2119,7 +2420,9 @@
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
                           "buttonColor": "#03B365",
                           "menuColor": "#03B365",
-                          "labelColor": "#FFFFFF"
+                          "labelColor": "#FFFFFF",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "desc": {
                           "index": 0,
@@ -2128,7 +2431,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -2136,7 +2439,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "描述",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.desc))}}"
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.desc))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "id": {
                           "index": 1,
@@ -2145,7 +2450,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -2153,7 +2458,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "ip_addr": {
                           "index": 2,
@@ -2162,7 +2469,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -2170,7 +2477,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "ip",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.ip_addr))}}"
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.ip_addr))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "name": {
                           "index": 3,
@@ -2179,7 +2488,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -2187,7 +2496,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "名字",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "perservation_time": {
                           "index": 4,
@@ -2196,7 +2507,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -2204,7 +2515,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "预约时间",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.perservation_time))}}"
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.perservation_time))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "phone": {
                           "index": 5,
@@ -2213,7 +2526,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -2221,7 +2534,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "手机",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}"
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "shop_code": {
                           "index": 6,
@@ -2230,7 +2545,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": false,
@@ -2238,7 +2553,9 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "shop_code",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.shop_code))}}"
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.shop_code))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         },
                         "shop_name": {
                           "index": 7,
@@ -2247,7 +2564,7 @@
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
-                          "textSize": "PARAGRAPH",
+                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -2255,15 +2572,19 @@
                           "isCellVisible": true,
                           "isDerived": false,
                           "label": "店铺",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.shop_name))}}"
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.shop_name))}}",
+                          "borderRadius": "0px",
+                          "boxShadow": "none"
                         }
                       },
                       "delimiter": ",",
                       "key": "0vcmuwn7at",
                       "derivedColumns": {},
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 63,
-                      "textSize": "PARAGRAPH",
+                      "textSize": "0.875rem",
                       "widgetId": "34y6rpfhc9",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisibleFilters": true,
                       "tableData": "{{get_perservatio.data.data}}",
                       "isVisible": true,
@@ -2277,6 +2598,24 @@
                       "isLoading": false,
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "borderRadius": "0px",
                       "isVisiblePagination": true,
                       "verticalAlignment": "CENTER",
                       "columnSizeMap": {
@@ -2290,11 +2629,22 @@
                     }
                   ],
                   "isDisabled": false,
-                  "key": "naxr84vyoo"
+                  "key": "naxr84vyoo",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 419.2265625,
+                  "detachFromLayout": true,
+                  "widgetId": "51lzyqsx9v",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "13xwkubux8",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "i520rg09yr",
               "height": 634,
+              "labelTextSize": "0.875rem",
               "rightColumn": 33,
               "detachFromLayout": true,
               "widgetId": "13xwkubux8",
@@ -2304,6 +2654,7 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "borderRadius": "0px",
               "width": 1109.6
             }
           ]
