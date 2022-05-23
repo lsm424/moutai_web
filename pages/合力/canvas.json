@@ -37,7 +37,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
               "topRow": 0,
-              "bottomRow": 70,
+              "bottomRow": 73,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -62,7 +62,7 @@
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 660,
+                  "bottomRow": 670,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -386,8 +386,8 @@
                       "widgetName": "cur_page_text",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 60,
-                      "bottomRow": 64,
+                      "topRow": 61,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -396,7 +396,7 @@
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
                       "fontFamily": "System Default",
-                      "leftColumn": 56,
+                      "leftColumn": 55,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
@@ -405,7 +405,7 @@
                       "text": "{{appsmith.store.cur_page_text}}",
                       "key": "s14d2o49ec",
                       "labelTextSize": "0.875rem",
-                      "rightColumn": 58,
+                      "rightColumn": 57,
                       "textAlign": "RIGHT",
                       "widgetId": "ys82z3sfet",
                       "isVisible": true,
@@ -423,8 +423,8 @@
                       "widgetName": "total_page_text",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 60,
-                      "bottomRow": 64,
+                      "topRow": 61,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -433,7 +433,7 @@
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
                       "fontFamily": "System Default",
-                      "leftColumn": 60,
+                      "leftColumn": 59,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
@@ -442,7 +442,7 @@
                       "text": "{{appsmith.store.total_page_text}}",
                       "key": "s14d2o49ec",
                       "labelTextSize": "0.875rem",
-                      "rightColumn": 62,
+                      "rightColumn": 61,
                       "textAlign": "LEFT",
                       "widgetId": "hgbf3a3cdl",
                       "isVisible": true,
@@ -460,8 +460,8 @@
                       "widgetName": "Text4",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
-                      "topRow": 60,
-                      "bottomRow": 64,
+                      "topRow": 61,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -470,12 +470,12 @@
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
                       "fontFamily": "System Default",
-                      "leftColumn": 58,
+                      "leftColumn": 57,
                       "dynamicBindingPathList": [],
                       "text": "/",
                       "key": "s14d2o49ec",
                       "labelTextSize": "0.875rem",
-                      "rightColumn": 60,
+                      "rightColumn": 59,
                       "textAlign": "CENTER",
                       "widgetId": "onlyl89u28",
                       "isVisible": true,
@@ -502,8 +502,8 @@
                       ],
                       "displayName": "Button Group",
                       "iconSVG": "/static/media/icon.d6773218.svg",
-                      "topRow": 60,
-                      "bottomRow": 64,
+                      "topRow": 61,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "groupButtons": {
                         "groupButton2": {
@@ -583,7 +583,7 @@
                           "key": "groupButtons.groupButton2.onClick"
                         }
                       ],
-                      "leftColumn": 43,
+                      "leftColumn": 42,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -592,7 +592,7 @@
                       "key": "w2bc7luufo",
                       "labelTextSize": "0.875rem",
                       "orientation": "horizontal",
-                      "rightColumn": 56,
+                      "rightColumn": 55,
                       "widgetId": "1hljmlyfbn",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -735,7 +735,7 @@
                         }
                       ],
                       "displayName": "Table",
-                      "bottomRow": 60,
+                      "bottomRow": 57,
                       "parentRowSpace": 10,
                       "defaultSelectedRow": "0",
                       "hideCard": false,
@@ -1111,10 +1111,14 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "perservation_batch",
-                      "onClick": "{{showModal('shop_select_model')}}",
+                      "widgetName": "perservation_batch_btn",
+                      "onClick": "{{(()=>{\nshowModal('shop_select_model');\nget_shopes_api.run();\n})()}}",
                       "buttonColor": "#03B365",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
                       "topRow": 4,
@@ -2734,7 +2738,7 @@
           "passwd",
           "passwdCopy",
           "passwd_input",
-          "perservation_batch",
+          "perservation_batch_btn",
           "perservation_history_model",
           "perservation_record_title",
           "phone_input",
