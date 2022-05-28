@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/perservation/update_perservation",
+      "path": "/account/refresh_status",
       "headers": [
         {
           "key": "content-type",

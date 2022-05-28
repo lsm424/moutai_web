@@ -1154,7 +1154,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "refresh_status_btn",
-                      "onClick": "{{update_perservation.run(() => get_acount_api.run(), () => {})}}",
+                      "onClick": "{{update_perservation.run(() => get_acount_api.run(), () => showAlert(update_perservation.data.mesage,'error'))}}",
                       "buttonColor": "#03B365",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca02633.svg",
