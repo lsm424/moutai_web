@@ -21,7 +21,12 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "path": "/account/select_account",
-      "headers": [],
+      "headers": [
+        {
+          "key": "content-type",
+          "value": "text/plain"
+        }
+      ],
       "encodeParamsToggle": true,
       "queryParameters": [
         {
@@ -61,7 +66,7 @@
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "text/plain"
       }
     },
     "executeOnLoad": true,
