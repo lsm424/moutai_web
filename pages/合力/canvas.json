@@ -716,19 +716,19 @@
                       "widgetName": "heli_table",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "accdate",
-                        "categorycode",
-                        "desc",
-                        "name",
-                        "passwd",
                         "phone",
-                        "shop_code",
-                        "shop_name",
+                        "name",
                         "source",
                         "status",
+                        "desc",
+                        "shop_name",
                         "update_status_time",
                         "perservation_time",
                         "ip_addr",
+                        "accdate",
+                        "categorycode",
+                        "passwd",
+                        "shop_code",
                         "token",
                         "update_token_time",
                         "customColumn2"
@@ -1210,9 +1210,9 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "在线设备数：{{appsmith.store.device_count}}",
+                      "text": "在线设备数：{{get_devices_count.data}}",
                       "key": "z1hhjeny72",
-                      "rightColumn": 8,
+                      "rightColumn": 10,
                       "textAlign": "LEFT",
                       "widgetId": "rtcbf3u8cy",
                       "isVisible": true,
@@ -1730,7 +1730,7 @@
                       "key": "dtc1ckwa4m",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "rightColumn": 34,
+                      "rightColumn": 35,
                       "widgetId": "4g55lsvxct",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -2260,7 +2260,7 @@
               "widgetId": "9ifbwqpw7t",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "",
-              "onTabSelected": "{{(()=>{\n\tif (heli_tab.selectedTab !== \"账号\") {return;}\n\tconst r = change_page.cur_page();\n\tget_acount_api.run(()=>{}, ()=>{}, {page: r[0]});\n})()}}",
+              "onTabSelected": "{{(()=>{\n\tif (heli_tab.selectedTab == \"账号\") {\n\t\tconst r = change_page.cur_page();\n\tget_acount_api.run(()=>{}, ()=>{}, {page: r[0]});\n\t} else if (heli_tab.selectedTab == \"中奖\") {\n\t\tget_perservation.run();\n\t}\n})()}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
@@ -3283,6 +3283,16 @@
           ]
         },
         "layoutOnLoadActions": [
+          [
+            {
+              "id": "合力_get_devices_count",
+              "name": "get_devices_count",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
           [
             {
               "id": "合力_get_acount_api",
