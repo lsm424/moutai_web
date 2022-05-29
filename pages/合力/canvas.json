@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 790,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
@@ -37,7 +37,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
               "topRow": 0,
-              "bottomRow": 73,
+              "bottomRow": 74,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -49,7 +49,7 @@
                   "key": "onTabSelected"
                 }
               ],
-              "leftColumn": 1,
+              "leftColumn": 6,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -611,7 +611,7 @@
                     {
                       "multiRowSelection": true,
                       "boxShadow": "none",
-                      "isVisibleDownload": true,
+                      "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd.svg",
                       "topRow": 9,
                       "isSortable": true,
@@ -663,12 +663,18 @@
                         },
                         {
                           "key": "accentColor"
+                        },
+                        {
+                          "key": "primaryColumns.perservation_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.ip_addr.computedValue"
                         }
                       ],
                       "leftColumn": 1,
                       "delimiter": ",",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": true,
+                      "isVisibleFilters": false,
                       "isVisible": true,
                       "enableClientSideSearch": true,
                       "version": 3,
@@ -710,28 +716,26 @@
                       "widgetName": "heli_table",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "name",
-                        "phone",
-                        "source",
-                        "status",
-                        "desc",
-                        "shop_name",
                         "accdate",
                         "categorycode",
-                        "update_status_time",
-                        "customColumn2",
-                        "customColumn3",
+                        "desc",
+                        "name",
                         "passwd",
+                        "phone",
                         "shop_code",
+                        "shop_name",
+                        "source",
+                        "status",
+                        "update_status_time",
+                        "perservation_time",
+                        "ip_addr",
                         "token",
-                        "update_token_time"
+                        "update_token_time",
+                        "customColumn2"
                       ],
                       "dynamicPropertyPathList": [
                         {
                           "key": "tableData"
-                        },
-                        {
-                          "key": "primaryColumns.customColumn3.onClick"
                         }
                       ],
                       "displayName": "Table",
@@ -746,9 +750,6 @@
                         },
                         {
                           "key": "primaryColumns.customColumn2.onClick"
-                        },
-                        {
-                          "key": "primaryColumns.customColumn3.onClick"
                         }
                       ],
                       "primaryColumns": {
@@ -863,7 +864,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "更新时间",
+                          "label": "状态更新时间",
                           "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.update_status_time))}}",
                           "borderRadius": "0px",
                           "boxShadow": "none"
@@ -986,29 +987,6 @@
                           "borderRadius": "0px",
                           "boxShadow": "none"
                         },
-                        "customColumn3": {
-                          "index": 12,
-                          "width": 150,
-                          "id": "customColumn3",
-                          "columnType": "iconButton",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": true,
-                          "label": "预约记录",
-                          "computedValue": "",
-                          "buttonStyle": "rgb(3, 179, 101)",
-                          "buttonLabelColor": "#FFFFFF",
-                          "buttonColor": "#03B365",
-                          "menuColor": "#03B365",
-                          "labelColor": "#FFFFFF",
-                          "iconName": "list-detail-view",
-                          "onClick": "{{(()=>{\nshowModal('perservation_history_model');\nget_perservatio.run();\n})()}}",
-                          "borderRadius": "0px",
-                          "boxShadow": "none"
-                        },
                         "accdate": {
                           "index": 0,
                           "width": 150,
@@ -1046,6 +1024,44 @@
                           "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.categorycode))}}",
                           "borderRadius": "0px",
                           "boxShadow": "none"
+                        },
+                        "perservation_time": {
+                          "index": 13,
+                          "width": 150,
+                          "id": "perservation_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "预约时间",
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.perservation_time))}}",
+                          "cellBackground": ""
+                        },
+                        "ip_addr": {
+                          "index": 14,
+                          "width": 150,
+                          "id": "ip_addr",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "ip地址",
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.ip_addr))}}",
+                          "cellBackground": ""
                         }
                       },
                       "key": "qpm2smggdg",
@@ -1071,28 +1087,6 @@
                           "iconName": "delete",
                           "borderRadius": "9999px",
                           "boxShadow": "none"
-                        },
-                        "customColumn3": {
-                          "index": 12,
-                          "width": 150,
-                          "id": "customColumn3",
-                          "columnType": "iconButton",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": true,
-                          "label": "预约记录",
-                          "computedValue": "",
-                          "buttonStyle": "rgb(3, 179, 101)",
-                          "buttonLabelColor": "#FFFFFF",
-                          "buttonColor": "#03B365",
-                          "menuColor": "#03B365",
-                          "labelColor": "#FFFFFF",
-                          "iconName": "list-detail-view",
-                          "borderRadius": "0px",
-                          "boxShadow": "none"
                         }
                       },
                       "labelTextSize": "0.875rem",
@@ -1105,8 +1099,8 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
-                      "isVisibleSearch": true,
-                      "isVisiblePagination": true,
+                      "isVisibleSearch": false,
+                      "isVisiblePagination": false,
                       "verticalAlignment": "CENTER"
                     },
                     {
@@ -1235,7 +1229,7 @@
                   "isDisabled": false,
                   "key": "6wlga0q1in",
                   "labelTextSize": "0.875rem",
-                  "tabName": "查询",
+                  "tabName": "账号",
                   "rightColumn": 433.5,
                   "detachFromLayout": true,
                   "widgetId": "ssjtk82uhs",
@@ -1417,7 +1411,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "FormButton1",
-                              "onClick": "{{add_acount_api_bak.run(()=>{\n\tvar ret = add_acount_api_bak.data;\n\tif (ret.code != 0) {\n\t\tshowAlert(ret.message);\n\t} else {\n\t\tshowAlert('添加成功')\n\t\tnavigateTo('合力')\n\t}\n})}}",
+                              "onClick": "{{add_account_api.run(()=>{\n\tvar ret = add_account_api.data;\n\tif (ret.code != 0) {\n\t\tshowAlert(ret.message, 'error');\n\t} else {\n\t\tshowAlert('添加成功')\n\t\tnavigateTo('合力')\n\t}\n})}}",
                               "buttonColor": "#03B365",
                               "dynamicPropertyPathList": [
                                 {
@@ -1683,6 +1677,581 @@
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "borderRadius": "0px"
+                },
+                {
+                  "tabId": "tabe6laxczyv1",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas8",
+                  "displayName": "Canvas",
+                  "topRow": 1,
+                  "bottomRow": 720,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 730,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "perservation_name_search",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 17.4677734375,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 27,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "名字...",
+                      "isDisabled": false,
+                      "key": "dtc1ckwa4m",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 34,
+                      "widgetId": "4g55lsvxct",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "4uh048haxf",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "perservation_source_search",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 17.4677734375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 19,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "来源...",
+                      "isDisabled": false,
+                      "key": "dtc1ckwa4m",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "onTextChanged": "{{get_perservation.run(() => {}, () => showAlert(get_perservation.data.mesage,'error'))}}",
+                      "rightColumn": 27,
+                      "widgetId": "n25lcomngh",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "4uh048haxf",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "perservation_status_search",
+                      "isFilterable": false,
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba.svg",
+                      "labelText": "状态",
+                      "topRow": 0,
+                      "bottomRow": 7,
+                      "parentRowSpace": 10,
+                      "type": "DROP_DOWN_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "GREEN",
+                      "selectionType": "SINGLE_SELECT",
+                      "animateLoading": true,
+                      "parentColumnSpace": 17.4677734375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 11,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "options": "[\n  {\n    \"label\": \"全部\",\n    \"value\": 0\n  },\n  {\n    \"label\": \"未中奖\",\n    \"value\": 1\n  },\n  {\n    \"label\": \"已中奖\",\n    \"value\": 2\n  }\n]",
+                      "placeholderText": "状态",
+                      "isDisabled": false,
+                      "key": "q10kod4c5h",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 18,
+                      "widgetId": "frfvrjz7vg",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "4uh048haxf",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "onOptionChange": "{{get_perservation.run(() => {}, () => showAlert(get_perservation.data.message,'error'))}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "perservation_phone_search",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 17.4677734375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 2,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        }
+                      ],
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "手机号...",
+                      "isDisabled": false,
+                      "key": "1bu06d71dm",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "onTextChanged": "{{get_perservation.run(() => {}, () => showAlert(get_perservation.data.message,'error'))}}",
+                      "rightColumn": 10,
+                      "widgetId": "1h87pfjiko",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "",
+                      "allowCurrencyChange": false,
+                      "version": 1,
+                      "parentId": "4uh048haxf",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "widgetName": "perservation_table",
+                      "defaultPageSize": 0,
+                      "columnOrder": [
+                        "per_id",
+                        "phone",
+                        "name",
+                        "source",
+                        "shop_name",
+                        "create_time",
+                        "status",
+                        "desc",
+                        "perservation_time",
+                        "ip_addr",
+                        "shop_code",
+                        "update_time"
+                      ],
+                      "isVisibleDownload": false,
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Table",
+                      "iconSVG": "/static/media/icon.db8a9cbd.svg",
+                      "topRow": 9,
+                      "bottomRow": 58,
+                      "isSortable": true,
+                      "parentRowSpace": 10,
+                      "type": "TABLE_WIDGET",
+                      "defaultSelectedRow": "0",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 16.056640625,
+                      "dynamicTriggerPathList": [],
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "primaryColumns.status.computedValue"
+                        },
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "childStylesheet.button.buttonColor"
+                        },
+                        {
+                          "key": "childStylesheet.button.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.menuButton.menuColor"
+                        },
+                        {
+                          "key": "childStylesheet.menuButton.borderRadius"
+                        },
+                        {
+                          "key": "childStylesheet.iconButton.menuColor"
+                        },
+                        {
+                          "key": "childStylesheet.iconButton.borderRadius"
+                        },
+                        {
+                          "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.create_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.desc.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.ip_addr.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.per_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.perservation_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.phone.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.shop_code.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.shop_name.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.source.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.update_time.computedValue"
+                        }
+                      ],
+                      "leftColumn": 2,
+                      "primaryColumns": {
+                        "status": {
+                          "index": 2,
+                          "width": 150,
+                          "id": "status",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "状态",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.status))}}",
+                          "labelColor": "#FFFFFF"
+                        },
+                        "create_time": {
+                          "index": 0,
+                          "width": 150,
+                          "id": "create_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "create_time",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.create_time))}}"
+                        },
+                        "desc": {
+                          "index": 1,
+                          "width": 150,
+                          "id": "desc",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "描述",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.desc))}}"
+                        },
+                        "ip_addr": {
+                          "index": 2,
+                          "width": 150,
+                          "id": "ip_addr",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "ip地址",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.ip_addr))}}"
+                        },
+                        "name": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "名字",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                        },
+                        "per_id": {
+                          "index": 4,
+                          "width": 150,
+                          "id": "per_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "id",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.per_id))}}"
+                        },
+                        "perservation_time": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "perservation_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "预约抽奖时间",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.perservation_time))}}"
+                        },
+                        "phone": {
+                          "index": 6,
+                          "width": 150,
+                          "id": "phone",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "手机号",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.phone))}}"
+                        },
+                        "shop_code": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "shop_code",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "shop_code",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.shop_code))}}"
+                        },
+                        "shop_name": {
+                          "index": 8,
+                          "width": 150,
+                          "id": "shop_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "店铺名",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.shop_name))}}"
+                        },
+                        "source": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "source",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "来源",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.source))}}"
+                        },
+                        "update_time": {
+                          "index": 11,
+                          "width": 150,
+                          "id": "update_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "update_time",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.update_time))}}"
+                        }
+                      },
+                      "delimiter": ",",
+                      "key": "cqlc5igb93",
+                      "derivedColumns": {},
+                      "rightColumn": 60,
+                      "textSize": "0.875rem",
+                      "widgetId": "noretl82pw",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisibleFilters": true,
+                      "tableData": "{{get_perservation.data.data}}",
+                      "isVisible": true,
+                      "label": "Data",
+                      "searchKey": "",
+                      "enableClientSideSearch": true,
+                      "version": 3,
+                      "totalRecordsCount": 0,
+                      "parentId": "4uh048haxf",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "horizontalAlignment": "LEFT",
+                      "isVisibleSearch": false,
+                      "childStylesheet": {
+                        "button": {
+                          "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "menuButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "iconButton": {
+                          "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "isVisiblePagination": true,
+                      "verticalAlignment": "CENTER",
+                      "columnSizeMap": {
+                        "task": 245,
+                        "step": 62,
+                        "status": 75,
+                        "perservation_time": 176
+                      }
+                    }
+                  ],
+                  "key": "74kwv7je1n",
+                  "tabName": "中奖",
+                  "rightColumn": 1137.9375,
+                  "detachFromLayout": true,
+                  "widgetId": "4uh048haxf",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "9ifbwqpw7t",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               ],
               "key": "xdyz28dw40",
@@ -1690,12 +2259,12 @@
               "rightColumn": 64,
               "widgetId": "9ifbwqpw7t",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "defaultTab": "Tab 1",
-              "onTabSelected": "{{(()=>{\n\tconst r = change_page.cur_page();\n\tget_acount_api.run(()=>{}, ()=>{}, {page: r[0]});\n})()}}",
+              "defaultTab": "",
+              "onTabSelected": "{{(()=>{\n\tif (heli_tab.selectedTab !== \"账号\") {return;}\n\tconst r = change_page.cur_page();\n\tget_acount_api.run(()=>{}, ()=>{}, {page: r[0]});\n})()}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
-                  "label": "查询",
+                  "label": "账号",
                   "id": "tab1",
                   "widgetId": "ssjtk82uhs",
                   "isVisible": true,
@@ -1707,6 +2276,13 @@
                   "widgetId": "2w9d81xibs",
                   "isVisible": true,
                   "index": 1
+                },
+                "tabe6laxczyv1": {
+                  "id": "tabe6laxczyv1",
+                  "index": 2,
+                  "label": "中奖",
+                  "widgetId": "4uh048haxf",
+                  "isVisible": true
                 }
               },
               "isVisible": true,
@@ -2633,7 +3209,7 @@
                       "widgetId": "34y6rpfhc9",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisibleFilters": true,
-                      "tableData": "{{get_perservatio.data.data}}",
+                      "tableData": "{{get_perservation.data.data}}",
                       "isVisible": true,
                       "label": "Data",
                       "searchKey": "",
@@ -2725,22 +3301,27 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "合力_get_perservatio",
-              "name": "get_perservatio",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "heli_table.selectedRow.phone"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "合力_get_shopes_api",
               "name": "get_shopes_api",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
                 "heli_table.selectedRow.phone"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "合力_get_perservation",
+              "name": "get_perservation",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "perservation_name_search.text",
+                "perservation_phone_search.text",
+                "perservation_source_search.text",
+                "perservation_status_search.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -2758,6 +3339,7 @@
           "Canvas5",
           "Canvas6",
           "Canvas7",
+          "Canvas8",
           "FormButton1",
           "FormButton2",
           "Icon1",
@@ -2784,7 +3366,12 @@
           "passwd_input",
           "perservation_batch_btn",
           "perservation_history_model",
+          "perservation_name_search",
+          "perservation_phone_search",
           "perservation_record_title",
+          "perservation_source_search",
+          "perservation_status_search",
+          "perservation_table",
           "phone_input",
           "phone_search",
           "refresh_status_btn",

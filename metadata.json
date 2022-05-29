@@ -18,7 +18,7 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "合力_add_account": {
+    "合力_add_account_api": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
@@ -54,7 +54,7 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "合力_get_perservatio": {
+    "合力_get_perservation": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
