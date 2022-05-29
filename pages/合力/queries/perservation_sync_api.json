@@ -21,10 +21,15 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "path": "/account/add_perservation",
-      "headers": [],
+      "headers": [
+        {
+          "key": "content-type",
+          "value": "application/json"
+        }
+      ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"phone\": {{heli_table.selectedRows.map((row) => {\n\t\t\t\t\t \t\treturn row.phone;\n\t\t\t\t\t })}},\n\t\"shop_code\": {{shop_select1.selectedOptionValue}},\n\t\"shop_name\": {{shop_select1.selectedOptionLabel}}\n}",
+      "body": "{\n\t\"phone\": {{heli_table.selectedRows.map((row) => {\n\t\t\t\t\t \t\treturn row.phone;\n\t\t\t\t\t })}},\n\t\"shop_code\": {{shop_select1.selectedOptionValue}},\n\t\"shop_name\": {{shop_select1.selectedOptionLabel}}\n}\n",
       "bodyFormData": [],
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [

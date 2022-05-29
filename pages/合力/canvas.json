@@ -2967,15 +2967,18 @@
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "id",
-                        "name",
-                        "phone",
-                        "status",
+                        "create_time",
                         "desc",
-                        "shop_name",
                         "ip_addr",
+                        "name",
+                        "per_id",
                         "perservation_time",
-                        "shop_code"
+                        "phone",
+                        "shop_code",
+                        "shop_name",
+                        "source",
+                        "status",
+                        "update_time"
                       ],
                       "isVisibleDownload": true,
                       "dynamicPropertyPathList": [],
@@ -2997,9 +3000,6 @@
                         },
                         {
                           "key": "primaryColumns.desc.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.id.computedValue"
                         },
                         {
                           "key": "primaryColumns.ip_addr.computedValue"
@@ -3024,6 +3024,18 @@
                         },
                         {
                           "key": "accentColor"
+                        },
+                        {
+                          "key": "primaryColumns.create_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.per_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.source.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.update_time.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -3065,25 +3077,6 @@
                           "isDerived": false,
                           "label": "描述",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.desc))}}",
-                          "borderRadius": "0px",
-                          "boxShadow": "none"
-                        },
-                        "id": {
-                          "index": 1,
-                          "width": 150,
-                          "id": "id",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isDisabled": false,
-                          "isCellVisible": true,
-                          "isDerived": false,
-                          "label": "id",
-                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
                           "borderRadius": "0px",
                           "boxShadow": "none"
                         },
@@ -3200,6 +3193,82 @@
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.shop_name))}}",
                           "borderRadius": "0px",
                           "boxShadow": "none"
+                        },
+                        "create_time": {
+                          "index": 0,
+                          "width": 150,
+                          "id": "create_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "create_time",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.create_time))}}",
+                          "cellBackground": ""
+                        },
+                        "per_id": {
+                          "index": 4,
+                          "width": 150,
+                          "id": "per_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "per_id",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.per_id))}}",
+                          "cellBackground": ""
+                        },
+                        "source": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "source",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "source",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.source))}}",
+                          "cellBackground": ""
+                        },
+                        "update_time": {
+                          "index": 11,
+                          "width": 150,
+                          "id": "update_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "update_time",
+                          "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.update_time))}}",
+                          "cellBackground": ""
                         }
                       },
                       "delimiter": ",",
