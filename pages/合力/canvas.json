@@ -1216,10 +1216,10 @@
                           "key": "label"
                         }
                       ],
-                      "labelPosition": "Right",
+                      "labelPosition": "Left",
                       "isDisabled": false,
                       "key": "rxqv86itzh",
-                      "rightColumn": 13,
+                      "rightColumn": 11,
                       "onChange": "{{(()=>{\n\tconst id = \"devices_count_timer\";\n\tif (\nrefresh_devices_switch.isSwitchedOn) {\n\t\tsetInterval(() => get_devices_count.run(), 5000, id);\n\t} else {\n\t\tclearInterval(id);\n\t}\n})()}}",
                       "widgetId": "17zupwxyrh",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
