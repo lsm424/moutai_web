@@ -47,6 +47,10 @@
         {
           "key": "end_time",
           "value": "{{end_time.formattedDate}}"
+        },
+        {
+          "key": "desc",
+          "value": "{{desc_search.text}}"
         }
       ],
       "bodyFormData": [],
@@ -61,11 +65,34 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
+      },
+      {
+        "key": "queryParameters[2].value"
+      },
+      {
+        "key": "queryParameters[3].value"
+      },
+      {
+        "key": "queryParameters[4].value"
+      },
+      {
+        "key": "queryParameters[5].value"
+      },
+      {
+        "key": "queryParameters[6].value"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "desc_search.text",
       "end_time.formattedDate",
       "name_search.text",
       "phone_search.text",

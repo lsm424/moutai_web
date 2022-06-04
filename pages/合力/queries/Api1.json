@@ -19,28 +19,9 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "headers": [
-        {
-          "key": "",
-          "value": ""
-        },
-        {
-          "key": "",
-          "value": ""
-        }
-      ],
+      "headers": [],
       "encodeParamsToggle": true,
-      "queryParameters": [
-        {
-          "key": "",
-          "value": ""
-        },
-        {
-          "key": "",
-          "value": ""
-        }
-      ],
-      "body": "{{\n\t{}\n}}",
+      "queryParameters": [],
       "bodyFormData": [],
       "httpMethod": "GET",
       "pluginSpecifiedTemplates": [
@@ -53,12 +34,11 @@
       }
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "{}"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],

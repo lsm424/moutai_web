@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 58,
+          "version": 59,
           "minHeight": 770,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -49,7 +49,7 @@
                   "key": "onTabSelected"
                 }
               ],
-              "leftColumn": 6,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -191,7 +191,7 @@
                       "key": "1bu06d71dm",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "rightColumn": 27,
+                      "rightColumn": 25,
                       "widgetId": "shhv5yo6ez",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -220,7 +220,7 @@
                       "parentColumnSpace": 17.4677734375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 27,
+                      "leftColumn": 25,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -233,7 +233,7 @@
                       "key": "dtc1ckwa4m",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "rightColumn": 34,
+                      "rightColumn": 31,
                       "widgetId": "im6upbq9d1",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -262,7 +262,7 @@
                       "parentColumnSpace": 17.4677734375,
                       "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
-                      "leftColumn": 34,
+                      "leftColumn": 31,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -275,7 +275,7 @@
                       "key": "dtc1ckwa4m",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "rightColumn": 41,
+                      "rightColumn": 37,
                       "widgetId": "3o017rs9je",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -307,7 +307,7 @@
                       "type": "DROP_DOWN_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "全部",
                       "selectionType": "SINGLE_SELECT",
                       "animateLoading": true,
                       "parentColumnSpace": 17.4677734375,
@@ -316,7 +316,7 @@
                           "key": "onOptionChange"
                         }
                       ],
-                      "leftColumn": 41,
+                      "leftColumn": 37,
                       "dynamicBindingPathList": [
                         {
                           "key": "accentColor"
@@ -328,7 +328,7 @@
                       "key": "q10kod4c5h",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "rightColumn": 48,
+                      "rightColumn": 43,
                       "widgetId": "lyk5fcbctz",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -1092,7 +1092,7 @@
                         }
                       },
                       "labelTextSize": "0.875rem",
-                      "rightColumn": 62,
+                      "rightColumn": 64,
                       "textSize": "0.875rem",
                       "widgetId": "xg2dprjvp2",
                       "tableData": "{{get_acount_api.data.data}}",
@@ -1216,6 +1216,7 @@
                           "key": "label"
                         }
                       ],
+                      "labelPosition": "Right",
                       "isDisabled": false,
                       "key": "rxqv86itzh",
                       "rightColumn": 13,
@@ -1229,6 +1230,54 @@
                       "parentId": "ssjtk82uhs",
                       "renderMode": "CANVAS",
                       "isLoading": false
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "desc_search",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 17.4677734375,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 43,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "placeholderText": "描述...",
+                      "isDisabled": false,
+                      "key": "uepex06luv",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 48,
+                      "widgetId": "v00aqd9e37",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "",
+                      "version": 2,
+                      "parentId": "ssjtk82uhs",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "iconAlign": "left",
+                      "defaultText": ""
                     }
                   ],
                   "isDisabled": false,
@@ -3369,22 +3418,6 @@
           ],
           [
             {
-              "id": "合力_get_acount_api",
-              "name": "get_acount_api",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "source_search.text",
-                "phone_search.text",
-                "start_time.formattedDate",
-                "name_search.text",
-                "end_time.formattedDate",
-                "status_search.selectedOptionValue",
-                "this.params.page"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "合力_get_shopes_api",
               "name": "get_shopes_api",
               "confirmBeforeExecute": false,
@@ -3396,6 +3429,23 @@
             }
           ],
           [
+            {
+              "id": "合力_get_acount_api",
+              "name": "get_acount_api",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "source_search.text",
+                "phone_search.text",
+                "start_time.formattedDate",
+                "name_search.text",
+                "end_time.formattedDate",
+                "desc_search.text",
+                "status_search.selectedOptionValue",
+                "this.params.page"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "合力_get_perservation",
               "name": "get_perservation",
@@ -3440,6 +3490,7 @@
           "cur_page_text",
           "delete_account_model",
           "delete_sure_model",
+          "desc_search",
           "end_time",
           "heli_tab",
           "heli_table",
