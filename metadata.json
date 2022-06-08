@@ -2,10 +2,12 @@
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 4,
   "pageOrder": [
-    "合力"
+    "合力",
+    "昆航"
   ],
   "publishedPageOrder": [
-    "合力"
+    "合力",
+    "昆航"
   ],
   "publishedDefaultPageName": "合力",
   "unpublishedDefaultPageName": "合力",

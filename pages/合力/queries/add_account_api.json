@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"phone\": {{phone_input.text}},\n\t\"passwd\": {{passwd_input.text}},\n\t\"source\": {{source_input.text}}\n}",
+      "body": "{\n\t\"phone\": {{phone_input.text}},\n\t\"passwd\": {{passwd_input.text}},\n\t\"source\": {{source_input.text}},\n\t\"shop_name\": {{shop_name_input.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
@@ -53,6 +53,7 @@
     "jsonPathKeys": [
       "passwd_input.text",
       "phone_input.text",
+      "shop_name_input.text",
       "source_input.text"
     ],
     "userSetOnLoad": false,
