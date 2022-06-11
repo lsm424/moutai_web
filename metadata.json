@@ -87,6 +87,10 @@
     "合力_utils.refresh_table_func": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
+    },
+    "昆航_get_order": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
     }
   },
   "publishedLayoutmongoEscapedWidgets": {},
