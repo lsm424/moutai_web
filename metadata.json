@@ -91,6 +91,10 @@
     "昆航_get_order": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
+    },
+    "昆航_refresh_order": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
     }
   },
   "publishedLayoutmongoEscapedWidgets": {},

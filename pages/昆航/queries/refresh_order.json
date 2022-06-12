@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "update_perservation",
+    "name": "refresh_order",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -16,11 +16,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "合力",
+    "pageId": "昆航",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/account/refresh_status",
+      "path": "/airkum/order/refresh_order",
       "headers": [
         {
           "key": "content-type",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"phone\": {{heli_table.selectedRows.map((row) => {\n\t\t\t\t\t \t\treturn row.phone;\n\t\t\t\t\t })}}\n}",
+      "body": "{\n\t\"order_list\": {{order_table.selectedRows.map((row) => {\n\t\t\t\t\t \t\treturn row.order_no;\n\t\t\t\t\t })}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
@@ -51,14 +51,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "heli_table.selectedRows.map((row) => {\n\t\t\t\t\t \t\treturn row.phone;\n\t\t\t\t\t })"
+      "order_table.selectedRows.map((row) => {\n\t\t\t\t\t \t\treturn row.order_no;\n\t\t\t\t\t })"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "合力_update_perservation",
+  "id": "昆航_refresh_order",
   "deleted": false,
-  "gitSyncId": "627fbc492c1e3f03d329c345_6280aefc2c1e3f03d329ea84"
+  "gitSyncId": "6291df05b4c51656bfeaaf4a_62a5fbf0c269a01a4277f3ba"
 }
