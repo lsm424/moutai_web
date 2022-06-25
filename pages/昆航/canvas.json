@@ -680,15 +680,6 @@
             }
           ]
         ],
-        "widgetNames": [
-          "Canvas1",
-          "Canvas2",
-          "MainContainer",
-          "RichTextEditor1",
-          "airkuming_tab",
-          "order_table",
-          "update_status"
-        ],
         "validOnPageLoadActions": true,
         "id": "昆航",
         "deleted": false,
@@ -701,6 +692,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "policies": [],
   "gitSyncId": "6291df05b4c51656bfeaaf4a_629ecb2daeaa1802518ad13f"
 }
