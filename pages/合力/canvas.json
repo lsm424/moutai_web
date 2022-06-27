@@ -669,6 +669,9 @@
                         },
                         {
                           "key": "primaryColumns.ip_addr.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.cert_card.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -723,12 +726,13 @@
                         "source",
                         "status",
                         "desc",
-                        "shop_name",
                         "update_status_time",
                         "perservation_time",
-                        "ip_addr",
                         "accdate",
                         "categorycode",
+                        "cert_card",
+                        "ip_addr",
+                        "shop_name",
                         "passwd",
                         "shop_code",
                         "token",
@@ -1063,6 +1067,25 @@
                           "isDerived": false,
                           "label": "ip地址",
                           "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.ip_addr))}}",
+                          "cellBackground": ""
+                        },
+                        "cert_card": {
+                          "index": 2,
+                          "width": 150,
+                          "id": "cert_card",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "身份证",
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.cert_card))}}",
                           "cellBackground": ""
                         }
                       },
