@@ -1512,7 +1512,7 @@
                               "fontFamily": "System Default",
                               "leftColumn": 0,
                               "dynamicBindingPathList": [],
-                              "text": "店铺（必填）",
+                              "text": "店铺（选填）",
                               "key": "ft25sllk3e",
                               "labelTextSize": "0.875rem",
                               "rightColumn": 16,
