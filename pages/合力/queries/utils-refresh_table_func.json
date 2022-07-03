@@ -20,12 +20,8 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async (pos) => {\n\t\t// 计算总量total\n\t\tawait get_account_count_api.run()\n\t\tvar ret = get_account_count_api.data\n\t\tif (ret.code != 0) {\n\t\t\tawait showAlert(ret.message)\n\t\t\treturn [1, 1]\n\t\t}\n\t\tconst total_text = parseInt(ret.data / 10) + 1\n\t\tstoreValue('total_page_text', total_text)\n\t\tresetWidget(\"total_page_text\")\n\n\t\t// 计算当前页\n\t\tvar cur_page_text;\n\t\tif (pos == undefined || appsmith.store.cur_page_text == undefined) {\n\t\t\tcur_page_text = 1;\n\t\t} else {\n\t\t\tcur_page_text = appsmith.store.cur_page_text + pos;\n\t\t\tif (cur_page_text < 1) {\n\t\t\t\tcur_page_text = 1;\n\t\t\t} else if (cur_page_text >= total_text) {\n\t\t\t\tcur_page_text = total_text\n\t\t\t}\n\t\t}\n\t\tstoreValue(\"cur_page_text\", cur_page_text)\n\t\tresetWidget(\"cur_page_text\")\n\t\t// 获取数据\n\t\treturn [cur_page_text, total_text]\n\t\t\n\t}",
-      "jsArguments": [
-        {
-          "name": "pos"
-        }
-      ],
+      "body": "async pos => {\n  await get_account_count_api.run();\n  var ret = get_account_count_api.data;\n  if (ret.code != 0) {\n    await showAlert(ret.message);\n    return [1, 1];\n  }\n  const total_text = parseInt(ret.data / 10) + 1;\n  storeValue('total_page_text', total_text);\n  resetWidget(\"total_page_text\");\n  var cur_page_text;\n  if (pos == undefined || appsmith.store.cur_page_text == undefined) {\n    cur_page_text = 1;\n  } else {\n    cur_page_text = appsmith.store.cur_page_text + pos;\n    if (cur_page_text < 1) {\n      cur_page_text = 1;\n    } else if (cur_page_text >= total_text) {\n      cur_page_text = total_text;\n    }\n  }\n  storeValue(\"cur_page_text\", cur_page_text);\n  resetWidget(\"cur_page_text\");\n  return [cur_page_text, total_text];\n}",
+      "jsArguments": [],
       "isAsync": true
     },
     "executeOnLoad": false,
@@ -38,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async (pos) => {\n\t\t// 计算总量total\n\t\tawait get_account_count_api.run()\n\t\tvar ret = get_account_count_api.data\n\t\tif (ret.code != 0) {\n\t\t\tawait showAlert(ret.message)\n\t\t\treturn [1, 1]\n\t\t}\n\t\tconst total_text = parseInt(ret.data / 10) + 1\n\t\tstoreValue('total_page_text', total_text)\n\t\tresetWidget(\"total_page_text\")\n\n\t\t// 计算当前页\n\t\tvar cur_page_text;\n\t\tif (pos == undefined || appsmith.store.cur_page_text == undefined) {\n\t\t\tcur_page_text = 1;\n\t\t} else {\n\t\t\tcur_page_text = appsmith.store.cur_page_text + pos;\n\t\t\tif (cur_page_text < 1) {\n\t\t\t\tcur_page_text = 1;\n\t\t\t} else if (cur_page_text >= total_text) {\n\t\t\t\tcur_page_text = total_text\n\t\t\t}\n\t\t}\n\t\tstoreValue(\"cur_page_text\", cur_page_text)\n\t\tresetWidget(\"cur_page_text\")\n\t\t// 获取数据\n\t\treturn [cur_page_text, total_text]\n\t\t\n\t}"
+      "async pos => {\n  await get_account_count_api.run();\n  var ret = get_account_count_api.data;\n  if (ret.code != 0) {\n    await showAlert(ret.message);\n    return [1, 1];\n  }\n  const total_text = parseInt(ret.data / 10) + 1;\n  storeValue('total_page_text', total_text);\n  resetWidget(\"total_page_text\");\n  var cur_page_text;\n  if (pos == undefined || appsmith.store.cur_page_text == undefined) {\n    cur_page_text = 1;\n  } else {\n    cur_page_text = appsmith.store.cur_page_text + pos;\n    if (cur_page_text < 1) {\n      cur_page_text = 1;\n    } else if (cur_page_text >= total_text) {\n      cur_page_text = total_text;\n    }\n  }\n  storeValue(\"cur_page_text\", cur_page_text);\n  resetWidget(\"cur_page_text\");\n  return [cur_page_text, total_text];\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

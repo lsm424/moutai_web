@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\treturn utils.refresh_table_func();\n\t}",
+      "body": "() => {\n  return utils.refresh_table_func();\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\treturn utils.refresh_table_func();\n\t}"
+      "() => {\n  return utils.refresh_table_func();\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

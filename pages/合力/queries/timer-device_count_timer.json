@@ -20,7 +20,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tclearInterval(\"device_count_timer\");\n\t\tsetInterval(() => { \n\t\t\t\t\t\t\t\t\t\t\t  var count = get_devices_count.data;\n\t\t\t\t\t\t\t\t\t\t\t  storeValue(\"device_count\", count);\n\t\t\t\t\t\t\t\t\t\t\t\tresetWidget(\"device_count\");\n\t\t\t\t\t\t\t\t\t\t\t}, 10000, \"device_count_timer\");\n\t}",
+      "body": "() => {\n  clearInterval(\"device_count_timer\");\n  setInterval(() => {\n    var count = get_devices_count.data;\n    storeValue(\"device_count\", count);\n    resetWidget(\"device_count\");\n  }, 10000, \"device_count_timer\");\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tclearInterval(\"device_count_timer\");\n\t\tsetInterval(() => { \n\t\t\t\t\t\t\t\t\t\t\t  var count = get_devices_count.data;\n\t\t\t\t\t\t\t\t\t\t\t  storeValue(\"device_count\", count);\n\t\t\t\t\t\t\t\t\t\t\t\tresetWidget(\"device_count\");\n\t\t\t\t\t\t\t\t\t\t\t}, 10000, \"device_count_timer\");\n\t}"
+      "() => {\n  clearInterval(\"device_count_timer\");\n  setInterval(() => {\n    var count = get_devices_count.data;\n    storeValue(\"device_count\", count);\n    resetWidget(\"device_count\");\n  }, 10000, \"device_count_timer\");\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

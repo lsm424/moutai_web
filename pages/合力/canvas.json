@@ -672,6 +672,9 @@
                         },
                         {
                           "key": "primaryColumns.cert_card.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.ip_addr_name.computedValue"
                         }
                       ],
                       "leftColumn": 1,
@@ -721,8 +724,8 @@
                       "widgetName": "heli_table",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "phone",
                         "name",
+                        "phone",
                         "source",
                         "status",
                         "desc",
@@ -731,12 +734,13 @@
                         "accdate",
                         "categorycode",
                         "cert_card",
-                        "ip_addr",
-                        "shop_name",
                         "passwd",
-                        "shop_code",
+                        "ip_addr",
+                        "ip_addr_name",
+                        "shop_name",
                         "token",
                         "update_token_time",
+                        "shop_code",
                         "customColumn2"
                       ],
                       "dynamicPropertyPathList": [
@@ -946,11 +950,11 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": false,
+                          "isVisible": true,
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "passwd",
+                          "label": "密码",
                           "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.passwd))}}",
                           "borderRadius": "0px",
                           "boxShadow": "none"
@@ -1086,6 +1090,25 @@
                           "isDerived": false,
                           "label": "身份证",
                           "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.cert_card))}}",
+                          "cellBackground": ""
+                        },
+                        "ip_addr_name": {
+                          "index": 16,
+                          "width": 150,
+                          "id": "ip_addr_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "ip归属地",
+                          "computedValue": "{{heli_table.sanitizedTableData.map((currentRow) => ( currentRow.ip_addr_name))}}",
                           "cellBackground": ""
                         }
                       },
@@ -2053,7 +2076,7 @@
                           "key": "accentColor"
                         }
                       ],
-                      "options": "[\n  {\n    \"label\": \"全部\",\n    \"value\": 0\n  },\n  {\n    \"label\": \"未中奖\",\n    \"value\": 1\n  },\n  {\n    \"label\": \"已中奖\",\n    \"value\": 2\n  }\n]",
+                      "options": "[\n  {\n    \"label\": \"全部\",\n    \"value\": 0\n  },\n  {\n    \"label\": \"未中奖\",\n    \"value\": 1\n  },\n  {\n    \"label\": \"已中奖\",\n    \"value\": 2\n  },\n  {\n    \"label\": \"可预约拿酒\",\n    \"value\": 3\n  },\n  {\n    \"label\": \"已预约拿酒\",\n    \"value\": 4\n  },\n  {\n    \"label\": \"已拿酒\",\n    \"value\": 5\n  },\n  {\n    \"label\": \"放弃拿酒\",\n    \"value\": 6\n  }\n]",
                       "placeholderText": "状态",
                       "isDisabled": false,
                       "key": "q10kod4c5h",
@@ -2123,17 +2146,20 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "per_id",
-                        "phone",
                         "name",
+                        "phone",
                         "source",
-                        "shop_name",
-                        "create_time",
                         "status",
                         "desc",
+                        "get_wine_time",
+                        "appoint_time",
                         "perservation_time",
                         "ip_addr",
+                        "ip_addr_name",
                         "shop_code",
-                        "update_time"
+                        "shop_name",
+                        "update_time",
+                        "create_time"
                       ],
                       "isVisibleDownload": false,
                       "dynamicPropertyPathList": [],
@@ -2215,6 +2241,15 @@
                         },
                         {
                           "key": "primaryColumns.update_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.appoint_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.get_wine_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.ip_addr_name.computedValue"
                         }
                       ],
                       "leftColumn": 2,
@@ -2422,6 +2457,63 @@
                           "isDerived": false,
                           "label": "update_time",
                           "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.update_time))}}"
+                        },
+                        "appoint_time": {
+                          "index": 0,
+                          "width": 150,
+                          "id": "appoint_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "预约拿酒时间",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.appoint_time))}}",
+                          "cellBackground": ""
+                        },
+                        "get_wine_time": {
+                          "index": 3,
+                          "width": 150,
+                          "id": "get_wine_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "拿酒时间",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.get_wine_time))}}",
+                          "cellBackground": ""
+                        },
+                        "ip_addr_name": {
+                          "index": 5,
+                          "width": 150,
+                          "id": "ip_addr_name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "ip归属地",
+                          "computedValue": "{{perservation_table.sanitizedTableData.map((currentRow) => ( currentRow.ip_addr_name))}}",
+                          "cellBackground": ""
                         }
                       },
                       "delimiter": ",",
@@ -2467,8 +2559,10 @@
                       "columnSizeMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75,
-                        "perservation_time": 176
+                        "status": 117,
+                        "perservation_time": 176,
+                        "appoint_time": 168,
+                        "get_wine_time": 235
                       }
                     }
                   ],
