@@ -2042,7 +2042,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 17.4677734375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
                       "resetOnSubmit": true,
                       "leftColumn": 27,
                       "dynamicBindingPathList": [],
@@ -2053,6 +2057,7 @@
                       "key": "dtc1ckwa4m",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
+                      "onTextChanged": "{{get_perservation.run(() => {}, () => showAlert(get_perservation.data.message,'error'))}}",
                       "rightColumn": 35,
                       "widgetId": "4g55lsvxct",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
