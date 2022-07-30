@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_shopes_api",
+    "name": "add_account",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
-      "organizationId": "62707a9c8a368d6f1ef5a201",
       "datasourceConfiguration": {
-        "url": "http://140.246.143.7:3389"
+        "url": "http://124.221.212.216:3389"
       },
       "invalids": [],
       "messages": [],
@@ -17,48 +16,50 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "合力",
+    "pageId": "云商",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/shopes/get_shopes",
-      "headers": [],
-      "encodeParamsToggle": true,
-      "queryParameters": [
+      "path": "/ys/account/add",
+      "headers": [
         {
-          "key": "phone",
-          "value": "{{heli_table.selectedRow.phone}}"
+          "key": "content-type",
+          "value": "application/json"
         }
       ],
+      "encodeParamsToggle": true,
+      "queryParameters": [],
+      "body": "{\n\t\"phone\": {{phone_input.text}}, \n\t\"source\": {{source_input.text}}\n}\n",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
       "formData": {
-        "apiContentType": "none"
+        "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "queryParameters[0].value"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "heli_table.selectedRow.phone"
+      "phone_input.text",
+      "source_input.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "合力_get_shopes_api",
+  "id": "云商_add_account",
   "deleted": false,
-  "gitSyncId": "627fbc492c1e3f03d329c345_627fc4712c1e3f03d329c4c5"
+  "gitSyncId": "6291df05b4c51656bfeaaf4a_62e507e34003a7259a2fb110"
 }

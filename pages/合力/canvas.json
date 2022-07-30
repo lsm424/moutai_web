@@ -4127,18 +4127,6 @@
           ],
           [
             {
-              "id": "合力_get_shopes_api",
-              "name": "get_shopes_api",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "heli_table.selectedRow.phone"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "合力_get_acount_api",
               "name": "get_acount_api",
               "confirmBeforeExecute": false,
@@ -4165,6 +4153,16 @@
                 "perservation_phone_search.text",
                 "perservation_source_search.text",
                 "perservation_status_search.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "合力_get_shopes_api",
+              "name": "get_shopes_api",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "heli_table.selectedRow.phone"
               ],
               "timeoutInMillisecond": 10000
             }

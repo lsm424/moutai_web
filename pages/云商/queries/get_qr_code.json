@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_shopes_api",
+    "name": "get_qr_code",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
-      "organizationId": "62707a9c8a368d6f1ef5a201",
       "datasourceConfiguration": {
-        "url": "http://140.246.143.7:3389"
+        "url": "http://124.221.212.216:3389"
       },
       "invalids": [],
       "messages": [],
@@ -17,17 +16,17 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "合力",
+    "pageId": "云商",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/shopes/get_shopes",
+      "path": "/ys/account/qr_code",
       "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [
         {
-          "key": "phone",
-          "value": "{{heli_table.selectedRow.phone}}"
+          "key": "new",
+          "value": "True"
         }
       ],
       "bodyFormData": [],
@@ -41,24 +40,18 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "queryParameters[0].value"
-      }
-    ],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "heli_table.selectedRow.phone"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "合力_get_shopes_api",
+  "id": "云商_get_qr_code",
   "deleted": false,
-  "gitSyncId": "627fbc492c1e3f03d329c345_627fc4712c1e3f03d329c4c5"
+  "gitSyncId": "6291df05b4c51656bfeaaf4a_62e537f44003a7259a2fbaf6"
 }
