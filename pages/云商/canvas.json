@@ -2299,6 +2299,7 @@
                       "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
                       "topRow": 7,
                       "isSortable": true,
+                      "onPageChange": "{{get_goods.run()}}",
                       "type": "TABLE_WIDGET_V2",
                       "inlineEditingSaveOption": "ROW_LEVEL",
                       "animateLoading": true,
@@ -2459,6 +2460,9 @@
                         },
                         {
                           "key": "primaryColumns.EditActions1.onSave"
+                        },
+                        {
+                          "key": "onPageChange"
                         }
                       ],
                       "displayName": "Table",
@@ -2487,6 +2491,9 @@
                         },
                         {
                           "key": "primaryColumns.EditActions1.onSave"
+                        },
+                        {
+                          "key": "onPageChange"
                         }
                       ],
                       "primaryColumns": {
@@ -3496,6 +3503,11 @@
                       "widgetName": "Button5",
                       "onClick": "{{closeModal('buy_model')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -3507,7 +3519,11 @@
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 32,
                       "dynamicBindingPathList": [
                         {
@@ -3540,9 +3556,13 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button6",
-                      "onClick": "{{set_buy.run(() => {}, () => showAlert(set_buy.data.message,'error'))}}",
+                      "onClick": "{{set_buy.run(() => {\n\tconst r = set_buy.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"成功\");\n\t}\n\tcloseModal('buy_model');\n}, () => {showAlert(set_buy.data.message,'error'); closeModal('buy_model')})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
