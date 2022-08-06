@@ -2166,7 +2166,7 @@
                               "labelTextSize": "1rem",
                               "isDeprecated": false,
                               "rightColumn": 33,
-                              "onChange": "{{set_start_time.run(() => {const r = set_start_time.data;\n if (r['code'] != 0) {\n\t showAlert(r.message, \"error\");\n }\t\t\t\t\t\t\t\t\t\t\t\t\t }, () => showAlert(set_start_time.data.message,'error'))}}",
+                              "onChange": "{{set_start_time.run(() => {const r = set_start_time.data;\n if (r['code'] != 0) {\n\t showAlert(r.message, \"error\");\n } else {\n\t showAlert(\"设置时间成功\");\n }\n get_status.run();\t\t\t\t\t\t\t\t\t\t\t\t\t }, () => showAlert(set_start_time.data.message,'error'))}}",
                               "widgetId": "yg3pcznpu3",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
@@ -3556,7 +3556,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button6",
-                      "onClick": "{{set_buy.run(() => {\n\tconst r = set_buy.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"成功\");\n\t}\n\tcloseModal('buy_model');\n}, () => {showAlert(set_buy.data.message,'error'); closeModal('buy_model')})}}",
+                      "onClick": "{{set_buy.run(() => {\n\tconst r = set_buy.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"成功\");\n\t}\n\tcloseModal('buy_model');\n\tget_status.run();\n}, () => {showAlert(set_buy.data.message,'error'); closeModal('buy_model')})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
