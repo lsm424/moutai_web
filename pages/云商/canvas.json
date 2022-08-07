@@ -2080,6 +2080,11 @@
                               "widgetName": "buy_btn",
                               "onClick": "{{showModal('buy_model')}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -2171,7 +2176,7 @@
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "定时抢购开关",
-                              "defaultSwitchState": true,
+                              "defaultSwitchState": false,
                               "version": 1,
                               "parentId": "98stgb724i",
                               "renderMode": "CANVAS",
@@ -3556,7 +3561,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button6",
-                      "onClick": "{{set_buy.run(() => {\n\tconst r = set_buy.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"成功\");\n\t}\n\tcloseModal('buy_model');\n\tget_status.run();\n}, () => {showAlert(set_buy.data.message,'error'); closeModal('buy_model')})}}",
+                      "onClick": "{{set_buy.run(() => {\n\tsetInterval(() => get_status.run(), 5000, \"get_status\");\n\tconst r = set_buy.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"成功\");\n\t}\n\tcloseModal('buy_model');\n\t// get_status.run();\n}, () => {showAlert(set_buy.data.message,'error'); closeModal('buy_model')})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
