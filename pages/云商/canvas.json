@@ -3561,7 +3561,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button6",
-                      "onClick": "{{set_buy.run(() => {\n\tsetInterval(() => get_status.run(), 5000, \"get_status\");\n\tconst r = set_buy.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"成功\");\n\t}\n\tcloseModal('buy_model');\n\t// get_status.run();\n}, () => {showAlert(set_buy.data.message,'error'); closeModal('buy_model')})}}",
+                      "onClick": "{{set_buy.run(() => {\n\tconst r = set_buy.data;\n\tif (r.code != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"成功\");\n\t}\n\tcloseModal('buy_model');\n\t// get_status.run();\n}, () => {showAlert(set_buy.data.message,'error'); closeModal('buy_model')})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
