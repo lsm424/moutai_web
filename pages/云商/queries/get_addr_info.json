@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "add_account",
+    "name": "get_addr_info",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -20,52 +20,55 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/ys/account/add",
-      "headers": [
+      "path": "/ys/register/addr_info",
+      "headers": [],
+      "encodeParamsToggle": true,
+      "queryParameters": [
         {
-          "key": "content-type",
-          "value": "application/json"
+          "key": "province",
+          "value": "{{province_select.selectedOptionLabel\n}}"
+        },
+        {
+          "key": "city",
+          "value": "{{city_select.selectedOptionLabel}}"
         }
       ],
-      "encodeParamsToggle": true,
-      "queryParameters": [],
-      "body": "{\n\t\"phone\": {{phone_input.text}}, \n\t\"source\": {{source_input.text}},\n\t\"addr\": {{addr_input.text}},\n\t\"province\": {{province_select.selectedOptionLabel}},\n\t\"city\": {{city_select.selectedOptionLabel}},\n\t\"area\": {{area_select.selectedOptionLabel}},\n\t\"name\": {{name_input.text}},\n\t\"cert_no\": {{cert_no_input.text}}\n}\n",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "GET",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "path"
+      },
+      {
+        "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "addr_input.text",
-      "area_select.selectedOptionLabel",
-      "cert_no_input.text",
       "city_select.selectedOptionLabel",
-      "name_input.text",
-      "phone_input.text",
-      "province_select.selectedOptionLabel",
-      "source_input.text"
+      "province_select.selectedOptionLabel"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "云商_add_account",
+  "id": "云商_get_addr_info",
   "deleted": false,
-  "gitSyncId": "6291df05b4c51656bfeaaf4a_62e507e34003a7259a2fb110"
+  "gitSyncId": "6291df05b4c51656bfeaaf4a_62f3c4c274d6e95d0a5414ba"
 }
