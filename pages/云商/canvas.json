@@ -1332,7 +1332,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "register_info",
+                          "label": "注册信息",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"register_info\"]))}}",
