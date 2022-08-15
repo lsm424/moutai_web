@@ -20,7 +20,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/ys/buy/buy",
+      "path": "/ys/register/start",
       "headers": [
         {
           "key": "content-type",
