@@ -3489,27 +3489,6 @@
                       "animateLoading": true,
                       "dynamicBindingPathList": [
                         {
-                          "key": "primaryColumns.step.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.task.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.status.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.buttonColor"
-                        },
-                        {
-                          "key": "primaryColumns.action.borderRadius"
-                        },
-                        {
-                          "key": "primaryColumns.action.boxShadow"
-                        },
-                        {
                           "key": "accentColor"
                         },
                         {
@@ -3550,6 +3529,24 @@
                         },
                         {
                           "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.create_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.phone.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.register_info.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.source.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.update_time.computedValue"
                         }
                       ],
                       "leftColumn": 2,
@@ -3592,10 +3589,12 @@
                       "widgetName": "Table1",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "step",
-                        "task",
-                        "status",
-                        "action"
+                        "id",
+                        "phone",
+                        "source",
+                        "create_time",
+                        "register_info",
+                        "update_time"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -3603,97 +3602,171 @@
                       "columnWidthMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75
+                        "status": 75,
+                        "id": 70,
+                        "source": 114,
+                        "create_time": 178
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
                       "parentColumnSpace": 16.62109375,
                       "dynamicTriggerPathList": [],
                       "primaryColumns": {
-                        "step": {
+                        "create_time": {
+                          "allowCellWrapping": false,
                           "index": 0,
                           "width": 150,
-                          "id": "step",
-                          "originalId": "step",
-                          "alias": "step",
+                          "originalId": "create_time",
+                          "id": "create_time",
+                          "alias": "create_time",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "step",
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                          "labelColor": "#FFFFFF"
+                          "label": "注册时间",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}",
+                          "cellBackground": ""
                         },
-                        "task": {
+                        "id": {
+                          "allowCellWrapping": false,
                           "index": 1,
                           "width": 150,
-                          "id": "task",
-                          "originalId": "task",
-                          "alias": "task",
+                          "originalId": "id",
+                          "id": "id",
+                          "alias": "id",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "task",
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                          "labelColor": "#FFFFFF"
+                          "label": "id",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                          "cellBackground": ""
                         },
-                        "status": {
+                        "phone": {
+                          "allowCellWrapping": false,
                           "index": 2,
                           "width": 150,
-                          "id": "status",
-                          "originalId": "status",
-                          "alias": "status",
+                          "originalId": "phone",
+                          "id": "phone",
+                          "alias": "phone",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "status",
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                          "labelColor": "#FFFFFF"
+                          "label": "手机号",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}",
+                          "cellBackground": ""
                         },
-                        "action": {
+                        "register_info": {
+                          "allowCellWrapping": false,
                           "index": 3,
                           "width": 150,
-                          "id": "action",
-                          "originalId": "action",
-                          "alias": "action",
+                          "originalId": "register_info",
+                          "id": "register_info",
+                          "alias": "register_info",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "button",
+                          "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
-                          "isCellEditable": false,
                           "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "action",
-                          "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                          "labelColor": "#FFFFFF",
-                          "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                          "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                          "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                          "label": "注册信息",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"register_info\"]))}}",
+                          "cellBackground": ""
+                        },
+                        "source": {
+                          "allowCellWrapping": false,
+                          "index": 4,
+                          "width": 150,
+                          "originalId": "source",
+                          "id": "source",
+                          "alias": "source",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "来源",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}",
+                          "cellBackground": ""
+                        },
+                        "update_time": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "update_time",
+                          "id": "update_time",
+                          "alias": "update_time",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": false,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "update_time",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}",
+                          "cellBackground": ""
                         }
                       },
                       "key": "6j260ftdj8",
@@ -3701,7 +3774,7 @@
                       "rightColumn": 62,
                       "textSize": "0.875rem",
                       "widgetId": "vccpzl9c33",
-                      "tableData": "{{get_register_succ.data}}",
+                      "tableData": "{{get_register_succ.data.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "1re2fe0rij",
@@ -4048,7 +4121,7 @@
               "widgetId": "10r2vpso2p",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "账号",
-              "onTabSelected": "{{(()=>{\n\tif (yunshang_tab.selectedTab == \"账号\") {\n\t\tget_account.run();\n\t} else if (yunshang_tab.selectedTab == \"商品\") {\n\t\tget_goods.run();\n\t} else if (yunshang_tab.selectedTab == \"抢购\") {\n\t\tget_success.run();\n\t} else if (yunshang_tab.selectedTab == \"注册\") {\n\t\tget_addr_info.run();\n\t}\n})()}}",
+              "onTabSelected": "{{(()=>{\n\tif (yunshang_tab.selectedTab == \"账号\") {\n\t\tget_account.run();\n\t} else if (yunshang_tab.selectedTab == \"商品\") {\n\t\tget_goods.run();\n\t} else if (yunshang_tab.selectedTab == \"抢购\") {\n\t\tget_success.run();\n\t} else if (yunshang_tab.selectedTab == \"注册\") {\n\t\tget_register_succ.run();\n\t}\n})()}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
@@ -4915,18 +4988,6 @@
           ],
           [
             {
-              "id": "云商_get_register_succ",
-              "name": "get_register_succ",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [
-                "register_phone_input.text"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
               "id": "云商_get_account",
               "name": "get_account",
               "confirmBeforeExecute": false,
@@ -4973,6 +5034,16 @@
                 "good_name_search.text",
                 "org_search.selectedOptionValue",
                 "is_selected_search.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "云商_get_register_succ",
+              "name": "get_register_succ",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "register_phone_input.text"
               ],
               "timeoutInMillisecond": 10000
             },
