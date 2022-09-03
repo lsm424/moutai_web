@@ -1,6 +1,6 @@
 {
   "unpublishedPage": {
-    "name": "特产商城",
+    "name": "酒店特产",
     "slug": "",
     "layouts": [
       {
@@ -279,7 +279,7 @@
                                   "isEditable": false,
                                   "isCellVisible": true,
                                   "isDerived": false,
-                                  "label": "预约时间",
+                                  "label": "抢购时间",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
                                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}"
@@ -611,7 +611,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "特产商城_get_perservation_success",
+              "id": "酒店特产_get_perservation_success",
               "name": "get_perservation_success",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -624,7 +624,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "特产商城",
+        "id": "酒店特产",
         "deleted": false,
         "policies": [],
         "userPermissions": []

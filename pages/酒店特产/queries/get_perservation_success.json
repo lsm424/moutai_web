@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "特产商城",
+    "pageId": "酒店特产",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -68,7 +68,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "特产商城_get_perservation_success",
+  "id": "酒店特产_get_perservation_success",
   "deleted": false,
   "gitSyncId": "6291df05b4c51656bfeaaf4a_6313592d91f7e84c98967350"
 }
