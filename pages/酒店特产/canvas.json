@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 60,
+          "version": 64,
           "minHeight": 740,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -282,7 +282,8 @@
                                   "label": "抢购时间",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}",
+                                  "validation": {}
                                 },
                                 "id": {
                                   "allowCellWrapping": false,
@@ -306,7 +307,8 @@
                                   "label": "id",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                                  "validation": {}
                                 },
                                 "phone": {
                                   "allowCellWrapping": false,
@@ -330,7 +332,8 @@
                                   "label": "手机号",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}",
+                                  "validation": {}
                                 },
                                 "software_version": {
                                   "allowCellWrapping": false,
@@ -354,7 +357,8 @@
                                   "label": "软件版本",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"software_version\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"software_version\"]))}}",
+                                  "validation": {}
                                 },
                                 "source": {
                                   "allowCellWrapping": false,
@@ -378,7 +382,8 @@
                                   "label": "来源",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}",
+                                  "validation": {}
                                 },
                                 "update_time": {
                                   "allowCellWrapping": false,
@@ -402,7 +407,8 @@
                                   "label": "update_time",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}"
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}",
+                                  "validation": {}
                                 }
                               },
                               "key": "79j9sa8aax",
@@ -623,6 +629,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "酒店特产",
         "deleted": false,

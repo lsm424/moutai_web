@@ -33,6 +33,7 @@
       "body": "{\n\t\"phone\": {{phone_input.text}},\n\t\"passwd\": {{passwd_input.text}},\n\t\"source\": {{source_input.text}},\n\t\"shop_name\": {{shop_name_input.text}},\n\t\"cert_card\": {{cert_card_input.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

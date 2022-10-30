@@ -33,6 +33,7 @@
       "body": "{\n\t\"order_list\": {{order_table.selectedRows.map((row) => {\n\t\t\t\t\t \t\treturn row.order_no;\n\t\t\t\t\t })}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

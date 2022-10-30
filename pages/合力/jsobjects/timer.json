@@ -16,7 +16,8 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ]
+    ],
+    "userPermissions": []
   },
   "id": "合力_timer",
   "deleted": false,

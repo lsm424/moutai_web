@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 60,
+          "version": 64,
           "minHeight": 730,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -974,7 +974,8 @@
                           "isDerived": false,
                           "label": "状态",
                           "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                          "labelColor": "#FFFFFF"
+                          "labelColor": "#FFFFFF",
+                          "validation": {}
                         },
                         "access_token": {
                           "allowCellWrapping": false,
@@ -998,7 +999,8 @@
                           "label": "access_token",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"access_token\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"access_token\"]))}}",
+                          "validation": {}
                         },
                         "create_time": {
                           "allowCellWrapping": false,
@@ -1022,7 +1024,8 @@
                           "label": "上号时间",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}",
+                          "validation": {}
                         },
                         "desc": {
                           "allowCellWrapping": false,
@@ -1046,7 +1049,8 @@
                           "label": "状态描述",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"desc\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"desc\"]))}}",
+                          "validation": {}
                         },
                         "need_set_trollies": {
                           "allowCellWrapping": false,
@@ -1070,7 +1074,8 @@
                           "label": "是否需要同步购物车",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"need_set_trollies\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"need_set_trollies\"]))}}",
+                          "validation": {}
                         },
                         "nickname": {
                           "allowCellWrapping": false,
@@ -1094,7 +1099,8 @@
                           "label": "nickname",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nickname\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nickname\"]))}}",
+                          "validation": {}
                         },
                         "online_time": {
                           "allowCellWrapping": false,
@@ -1118,7 +1124,8 @@
                           "label": "上线时间",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"online_time\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"online_time\"]))}}",
+                          "validation": {}
                         },
                         "phone": {
                           "allowCellWrapping": false,
@@ -1142,7 +1149,8 @@
                           "label": "手机号",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}",
+                          "validation": {}
                         },
                         "pid": {
                           "allowCellWrapping": false,
@@ -1166,7 +1174,8 @@
                           "label": "微信pid",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"pid\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"pid\"]))}}",
+                          "validation": {}
                         },
                         "source": {
                           "allowCellWrapping": false,
@@ -1190,7 +1199,8 @@
                           "label": "来源",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}",
+                          "validation": {}
                         },
                         "trollies": {
                           "allowCellWrapping": false,
@@ -1214,7 +1224,8 @@
                           "label": "购物车",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"trollies\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"trollies\"]))}}",
+                          "validation": {}
                         },
                         "update_status_time": {
                           "allowCellWrapping": false,
@@ -1238,7 +1249,8 @@
                           "label": "更新状态时间",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_status_time\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_status_time\"]))}}",
+                          "validation": {}
                         },
                         "update_time": {
                           "allowCellWrapping": false,
@@ -1262,7 +1274,8 @@
                           "label": "update_time",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}"
+                          "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}",
+                          "validation": {}
                         },
                         "customColumn1": {
                           "allowCellWrapping": false,
@@ -1292,7 +1305,8 @@
                           "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
                           "customAlias": "",
                           "iconName": "delete",
-                          "onClick": "{{showModal('delete_account_model')}}"
+                          "onClick": "{{showModal('delete_account_model')}}",
+                          "validation": {}
                         },
                         "customColumn2": {
                           "allowCellWrapping": false,
@@ -1322,7 +1336,8 @@
                           "boxShadow": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                           "customAlias": "",
                           "iconName": "shopping-cart",
-                          "onClick": "{{refresh_trolleies.run(() => {\n\tconst r = refresh_trolleies.data;\n\tif (r['code'] != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"同步成功\");\n\t\tget_account.run();\n\t};\n}, () => showAlert(refresh_trolleies.data.message,'error'))}}"
+                          "onClick": "{{refresh_trolleies.run(() => {\n\tconst r = refresh_trolleies.data;\n\tif (r['code'] != 0) {\n\t\tshowAlert(r.message, \"error\");\n\t} else {\n\t\tshowAlert(\"同步成功\");\n\t\tget_account.run();\n\t};\n}, () => showAlert(refresh_trolleies.data.message,'error'))}}",
+                          "validation": {}
                         },
                         "register_info": {
                           "allowCellWrapping": false,
@@ -1348,7 +1363,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"register_info\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "session_key": {
                           "allowCellWrapping": false,
@@ -1374,7 +1390,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"session_key\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "groupIntegral": {
                           "allowCellWrapping": false,
@@ -1400,7 +1417,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"groupIntegral\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "integral": {
                           "allowCellWrapping": false,
@@ -1426,7 +1444,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"integral\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "wineIntegral": {
                           "allowCellWrapping": false,
@@ -1452,7 +1471,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{account_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wineIntegral\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         }
                       },
                       "key": "zix87wr9zc",
@@ -1464,6 +1484,7 @@
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "5dqi4rx4my",
+                      "serverSidePaginationEnabled": false,
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
@@ -1964,7 +1985,8 @@
                                   "isDerived": false,
                                   "label": "step",
                                   "computedValue": "{{success_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                                  "labelColor": "#FFFFFF"
+                                  "labelColor": "#FFFFFF",
+                                  "validation": {}
                                 },
                                 "task": {
                                   "index": 1,
@@ -1984,7 +2006,8 @@
                                   "isDerived": false,
                                   "label": "task",
                                   "computedValue": "{{success_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                                  "labelColor": "#FFFFFF"
+                                  "labelColor": "#FFFFFF",
+                                  "validation": {}
                                 },
                                 "status": {
                                   "index": 2,
@@ -2004,7 +2027,8 @@
                                   "isDerived": false,
                                   "label": "status",
                                   "computedValue": "{{success_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                                  "labelColor": "#FFFFFF"
+                                  "labelColor": "#FFFFFF",
+                                  "validation": {}
                                 },
                                 "action": {
                                   "index": 3,
@@ -2029,7 +2053,8 @@
                                   "labelColor": "#FFFFFF",
                                   "buttonColor": "{{success_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
                                   "borderRadius": "{{success_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                                  "boxShadow": "{{success_table.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                                  "boxShadow": "{{success_table.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                                  "validation": {}
                                 }
                               },
                               "key": "om3yeo8wae",
@@ -2768,7 +2793,7 @@
                   "widgetName": "Canvas6",
                   "displayName": "Canvas",
                   "topRow": 1,
-                  "bottomRow": 660,
+                  "bottomRow": 1020,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -2889,6 +2914,9 @@
                         },
                         {
                           "key": "totalRecordsCount"
+                        },
+                        {
+                          "key": "primaryColumns.count_change.computedValue"
                         }
                       ],
                       "leftColumn": 3,
@@ -2942,7 +2970,8 @@
                         "count",
                         "create_time",
                         "update_time",
-                        "EditActions1"
+                        "EditActions1",
+                        "count_change"
                       ],
                       "dynamicPropertyPathList": [
                         {
@@ -3012,7 +3041,8 @@
                           "label": "购买数量",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"buy_num\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"buy_num\"]))}}",
+                          "validation": {}
                         },
                         "count": {
                           "allowCellWrapping": false,
@@ -3027,7 +3057,7 @@
                           "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
-                          "isVisible": true,
+                          "isVisible": false,
                           "isDisabled": false,
                           "isCellEditable": false,
                           "isEditable": false,
@@ -3036,7 +3066,8 @@
                           "label": "库存",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"count\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"count\"]))}}",
+                          "validation": {}
                         },
                         "create_time": {
                           "allowCellWrapping": false,
@@ -3060,7 +3091,8 @@
                           "label": "导入时间",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}",
+                          "validation": {}
                         },
                         "good_id": {
                           "allowCellWrapping": false,
@@ -3084,7 +3116,8 @@
                           "label": "商品ID",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"good_id\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"good_id\"]))}}",
+                          "validation": {}
                         },
                         "icon": {
                           "allowCellWrapping": false,
@@ -3108,7 +3141,8 @@
                           "label": "图片链接",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"icon\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"icon\"]))}}",
+                          "validation": {}
                         },
                         "is_select": {
                           "allowCellWrapping": false,
@@ -3133,7 +3167,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"is_select\"]))}}",
-                          "onSubmit": ""
+                          "onSubmit": "",
+                          "validation": {}
                         },
                         "name": {
                           "allowCellWrapping": false,
@@ -3157,7 +3192,8 @@
                           "label": "商品名称",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                          "validation": {}
                         },
                         "price": {
                           "allowCellWrapping": false,
@@ -3181,7 +3217,8 @@
                           "label": "价格（分）",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"]))}}",
+                          "validation": {}
                         },
                         "source": {
                           "allowCellWrapping": false,
@@ -3205,7 +3242,8 @@
                           "label": "来源",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}",
+                          "validation": {}
                         },
                         "update_time": {
                           "allowCellWrapping": false,
@@ -3229,7 +3267,8 @@
                           "label": "更新时间",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}"
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}",
+                          "validation": {}
                         },
                         "EditActions1": {
                           "allowCellWrapping": false,
@@ -3263,7 +3302,36 @@
                           "discardButtonVariant": "TERTIARY",
                           "isSaveDisabled": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( !good_table.updatedRowIndices.includes(currentIndex)))}}",
                           "isDiscardDisabled": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( !good_table.updatedRowIndices.includes(currentIndex)))}}",
-                          "onSave": "{{set_good_status.run(() => {\nconst r = set_good_status.data;\n\tif  (r['code'] == 0) {\n\t\tshowAlert(\"修改成功\");}\n\telse {\nshowAlert(set_good_status.data.message, \"error\");}\n\tget_goods.run();\n\t}, () => showAlert(set_good_status.data.message,'error'))}}"
+                          "onSave": "{{set_good_status.run(() => {\nconst r = set_good_status.data;\n\tif  (r['code'] == 0) {\n\t\tshowAlert(\"修改成功\");}\n\telse {\nshowAlert(set_good_status.data.message, \"error\");}\n\tget_goods.run();\n\t}, () => showAlert(set_good_status.data.message,'error'))}}",
+                          "validation": {}
+                        },
+                        "count_change": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "count_change",
+                          "id": "count_change",
+                          "alias": "count_change",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "count_change",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{good_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"count_change\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "zix87wr9zc",
@@ -3527,6 +3595,118 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "onOptionChange": "{{get_goods.run(() => {}, () => showAlert(get_goods.data.message,'error'))}}"
+                    },
+                    {
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "setAdaptiveYMin": true,
+                      "widgetName": "Chart1",
+                      "allowScroll": true,
+                      "displayName": "Chart",
+                      "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+                      "searchTags": [
+                        "graph",
+                        "visuals",
+                        "visualisations"
+                      ],
+                      "topRow": 68,
+                      "bottomRow": 100,
+                      "parentRowSpace": 10,
+                      "type": "CHART_WIDGET",
+                      "hideCard": false,
+                      "chartData": {
+                        "l131pj6alk": {
+                          "seriesName": "Sal",
+                          "data": "{{good_table.selectedRow.count_change}}"
+                        }
+                      },
+                      "animateLoading": true,
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 16.62109375,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 7,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "boxShadow"
+                        },
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "chartData.l131pj6alk.data"
+                        },
+                        {
+                          "key": "chartName"
+                        }
+                      ],
+                      "customFusionChartConfig": {
+                        "type": "column2d",
+                        "dataSource": {
+                          "data": [
+                            {
+                              "label": "Product1",
+                              "value": 20000
+                            },
+                            {
+                              "label": "Product2",
+                              "value": 22000
+                            },
+                            {
+                              "label": "Product3",
+                              "value": 32000
+                            }
+                          ],
+                          "chart": {
+                            "caption": "Sales Report",
+                            "xAxisName": "Product Line",
+                            "yAxisName": "Revenue($)",
+                            "theme": "fusion",
+                            "alignCaptionWithCanvas": 1,
+                            "captionFontSize": "24",
+                            "captionAlignment": "center",
+                            "captionPadding": "20",
+                            "captionFontColor": "#231F20",
+                            "legendIconSides": "4",
+                            "legendIconBgAlpha": "100",
+                            "legendIconAlpha": "100",
+                            "legendPosition": "top",
+                            "canvasPadding": "0",
+                            "chartLeftMargin": "20",
+                            "chartTopMargin": "10",
+                            "chartRightMargin": "40",
+                            "chartBottomMargin": "10",
+                            "xAxisNameFontSize": "14",
+                            "labelFontSize": "12",
+                            "labelFontColor": "#716E6E",
+                            "xAxisNameFontColor": "#716E6E",
+                            "yAxisNameFontSize": "14",
+                            "yAxisValueFontSize": "12",
+                            "yAxisValueFontColor": "#716E6E",
+                            "yAxisNameFontColor": "#716E6E"
+                          }
+                        }
+                      },
+                      "key": "1khwzdybhv",
+                      "isDeprecated": false,
+                      "rightColumn": 54,
+                      "widgetId": "xku7af9heb",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "0u9vt0wzby",
+                      "labelOrientation": "auto",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "yAxisName": "库存",
+                      "chartName": "{{good_table.selectedRow.name}}",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "xAxisName": "时间",
+                      "chartType": "COLUMN_CHART"
                     }
                   ],
                   "key": "0oqt9bwgpc",
@@ -3726,7 +3906,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"create_time\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "id": {
                           "allowCellWrapping": false,
@@ -3752,7 +3933,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "phone": {
                           "allowCellWrapping": false,
@@ -3778,7 +3960,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "register_info": {
                           "allowCellWrapping": false,
@@ -3804,7 +3987,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"register_info\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "source": {
                           "allowCellWrapping": false,
@@ -3830,7 +4014,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"source\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "update_time": {
                           "allowCellWrapping": false,
@@ -3856,7 +4041,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         }
                       },
                       "key": "6j260ftdj8",
@@ -5150,6 +5336,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "云商",
         "deleted": false,

@@ -7,7 +7,8 @@
     "actions": [],
     "archivedActions": [],
     "body": "export default {\n\tpre_page: () => {\n\t\treturn utils.refresh_table_func(-1);\n\t},\n\tnext_page: () => {\n\t\treturn utils.refresh_table_func(1);\n\t},\n\tfirst_page: () => {\n\t\treturn utils.refresh_table_func();\n\t},\n\tcur_page: () => {\n\t\treturn utils.refresh_table_func(0);\n\t}\n}",
-    "variables": []
+    "variables": [],
+    "userPermissions": []
   },
   "id": "合力_change_page",
   "deleted": false,

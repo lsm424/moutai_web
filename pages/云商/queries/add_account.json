@@ -32,6 +32,7 @@
       "body": "{\n\t\"phone\": {{phone_input.text}}, \n\t\"source\": {{source_input.text}},\n\t\"addr\": {{addr_input.text}},\n\t\"province\": {{province_select.selectedOptionLabel}},\n\t\"city\": {{city_select.selectedOptionLabel}},\n\t\"area\": {{area_select.selectedOptionLabel}},\n\t\"name\": {{name_input.text}},\n\t\"cert_no\": {{cert_no_input.text}}\n}\n",
       "bodyFormData": [],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

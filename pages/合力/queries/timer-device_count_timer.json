@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "() => {\n  clearInterval(\"device_count_timer\");\n  setInterval(() => {\n    var count = get_devices_count.data;\n    storeValue(\"device_count\", count);\n    resetWidget(\"device_count\");\n  }, 10000, \"device_count_timer\");\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

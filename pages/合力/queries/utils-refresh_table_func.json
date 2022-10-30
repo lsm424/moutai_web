@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "async pos => {\n  await get_account_count_api.run();\n  var ret = get_account_count_api.data;\n  if (ret.code != 0) {\n    await showAlert(ret.message);\n    return [1, 1];\n  }\n  const total_text = parseInt(ret.data / 10) + 1;\n  storeValue('total_page_text', total_text);\n  resetWidget(\"total_page_text\");\n  var cur_page_text;\n  if (pos == undefined || appsmith.store.cur_page_text == undefined) {\n    cur_page_text = 1;\n  } else {\n    cur_page_text = appsmith.store.cur_page_text + pos;\n    if (cur_page_text < 1) {\n      cur_page_text = 1;\n    } else if (cur_page_text >= total_text) {\n      cur_page_text = total_text;\n    }\n  }\n  storeValue(\"cur_page_text\", cur_page_text);\n  resetWidget(\"cur_page_text\");\n  return [cur_page_text, total_text];\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
     },

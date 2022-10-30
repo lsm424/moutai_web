@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 64,
           "minHeight": 770,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -1242,10 +1242,11 @@
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "ssjtk82uhs",
+                      "serverSidePaginationEnabled": true,
                       "renderMode": "CANVAS",
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": false,
-                      "isVisiblePagination": false,
+                      "isVisiblePagination": true,
                       "verticalAlignment": "CENTER"
                     },
                     {
@@ -4138,8 +4139,8 @@
                 "name_search.text",
                 "end_time.formattedDate",
                 "desc_search.text",
-                "status_search.selectedOptionValue",
-                "this.params.page"
+                "heli_tab.pageNo",
+                "status_search.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -4168,6 +4169,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "合力",
         "deleted": false,

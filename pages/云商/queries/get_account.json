@@ -43,6 +43,7 @@
       ],
       "bodyFormData": [],
       "httpMethod": "GET",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

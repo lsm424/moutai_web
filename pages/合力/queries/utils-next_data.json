@@ -21,6 +21,7 @@
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "body": "day => {\n  if (day == undefined) {\n    day = 0;\n  }\n  var dateTime = new Date();\n  dateTime = dateTime.setDate(dateTime.getDate() + day);\n  var date = new Date(dateTime);\n  var Y = date.getFullYear() + '-';\n  var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';\n  var D = (date.getDate() < 10 ? '0' + date.getDate() : date.getDate()) + ' ';\n  var h = (date.getHours() < 10 ? '0' + date.getHours() : date.getHours()) + ':';\n  var m = (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()) + ':';\n  var s = date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds();\n  return Y + M + D + h + m + s;\n}",
+      "selfReferencingDataPaths": [],
       "jsArguments": [
         {
           "name": "day"

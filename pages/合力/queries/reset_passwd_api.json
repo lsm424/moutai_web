@@ -33,6 +33,7 @@
       "body": "{\n\t\"phone\": {{heli_table.selectedRow.phone}},\n\t\"passwd\": {{reset_passwd_input.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

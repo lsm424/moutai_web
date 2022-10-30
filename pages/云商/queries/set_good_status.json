@@ -32,6 +32,7 @@
       "body": "{\n\t\"good_id\": {{good_table.triggeredRow.good_id}},\n\t\"is_select\": {{good_table.triggeredRow.is_select}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true

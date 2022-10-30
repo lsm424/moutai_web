@@ -56,7 +56,7 @@
         },
         {
           "key": "page",
-          "value": "{{this.params.page}}"
+          "value": "{{heli_tab.pageNo}}"
         },
         {
           "key": "desc",
@@ -65,6 +65,7 @@
       ],
       "bodyFormData": [],
       "httpMethod": "GET",
+      "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -95,10 +96,10 @@
         "key": "queryParameters[5].value"
       },
       {
-        "key": "queryParameters[6].value"
+        "key": "queryParameters[7].value"
       },
       {
-        "key": "queryParameters[7].value"
+        "key": "queryParameters[6].value"
       }
     ],
     "isValid": true,
@@ -107,12 +108,12 @@
     "jsonPathKeys": [
       "desc_search.text",
       "end_time.formattedDate",
+      "heli_tab.pageNo",
       "name_search.text",
       "phone_search.text",
       "source_search.text",
       "start_time.formattedDate",
-      "status_search.selectedOptionValue",
-      "this.params.page"
+      "status_search.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
