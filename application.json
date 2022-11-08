@@ -15,6 +15,10 @@
     {
       "id": "酒店特产",
       "isDefault": false
+    },
+    {
+      "id": "同城",
+      "isDefault": false
     }
   ],
   "viewMode": false,
