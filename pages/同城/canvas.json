@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 65,
+          "version": 67,
           "minHeight": 800,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -277,6 +277,9 @@
                         },
                         {
                           "key": "primaryColumns.update_time.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.room_code.computedValue"
                         }
                       ],
                       "leftColumn": 2,
@@ -324,6 +327,7 @@
                         "flight_no",
                         "start",
                         "arrival",
+                        "room_code",
                         "create_time",
                         "money",
                         "name",
@@ -623,6 +627,34 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"update_time\"]))}}",
                           "validation": {}
+                        },
+                        "room_code": {
+                          "allowCellWrapping": false,
+                          "index": 7,
+                          "width": 150,
+                          "originalId": "room_code",
+                          "id": "room_code",
+                          "alias": "room_code",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "仓位",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"room_code\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "gbtkgz6zkq",
@@ -715,7 +747,7 @@
                       "type": "SELECT_WIDGET",
                       "serverSideFiltering": false,
                       "hideCard": false,
-                      "defaultOptionValue": "GREEN",
+                      "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `全部`))(status_select.options, status_select.serverSideFiltering) }}",
                       "animateLoading": true,
                       "parentColumnSpace": 16.3388671875,
                       "dynamicTriggerPathList": [
@@ -733,6 +765,9 @@
                         },
                         {
                           "key": "options"
+                        },
+                        {
+                          "key": "defaultOptionValue"
                         }
                       ],
                       "labelPosition": "Top",
